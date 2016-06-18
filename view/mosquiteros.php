@@ -72,7 +72,7 @@
 		<th>ITEM 1</th>
 	</tr>
     <tr>
-        <td><div id="costo_vertical">-</div></td>
+        <td><div id="costo_vertical_basico"  onmouseover="MC_Vertical(60)">-</div></td>
         <td><div id="costo_horizontal">-</div></td>
         <td><div id="costo_adaptador">-</div></td>
         <td><div id="costo_angulo">-</div></td>

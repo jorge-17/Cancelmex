@@ -21,3 +21,9 @@ function MF_color(){
 	precio=alto*ancho*x;
 	document.getElementById("pre_color").innerHTML=precio;
 }
+
+function MC_Vertical(x){
+    alto=document.getElementById("alto_MC").value;
+    costo=(x*2)*alto;
+    document.getElementById("costo_vertical_basico").innerHTML=costo;
+}
