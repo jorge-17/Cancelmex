@@ -27,3 +27,31 @@ function MC_Vertical(x){
     costo=(x*2)*alto;
     document.getElementById("costo_vertical_basico").innerHTML=costo;
 }
+
+function MC_Horizontal(y){
+    ancho=document.getElementById("ancho_MC").value;
+    costo=(y*2)*ancho;
+    document.getElementById("costo_horizontal_basico").innerHTML=costo;
+}
+
+function MC_Adaptador(a){
+    ancho=document.getElementById("ancho_MC").value;
+    costo=(a*2)*ancho;
+    document.getElementById("costo_adaptador_basico").innerHTML=costo;
+}
+
+function MC_Angulo(a){
+    ancho=document.getElementById("ancho_MC").value;
+    costo=(a*2)*ancho;
+    document.getElementById("costo_angulo_basico").innerHTML=costo;
+}
+
+function MC_jal(j){
+    costo=(j*2);
+    document.getElementById("costo_jal_basico").innerHTML=costo;
+}
+
+function MC_Carret(c){
+    costo=(c*2);
+    document.getElementById("costo_carret_basico").innerHTML=costo;
+}

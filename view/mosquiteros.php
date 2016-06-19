@@ -73,15 +73,15 @@
 	</tr>
     <tr>
         <td><div id="costo_vertical_basico"  onmouseover="MC_Vertical(60)">-</div></td>
-        <td><div id="costo_horizontal">-</div></td>
-        <td><div id="costo_adaptador">-</div></td>
-        <td><div id="costo_angulo">-</div></td>
-        <td><div id="costo_jal">-</div></td>
-        <td><div id="costo_carret">-</div></td>
-        <td><div id="costo_vinil">-</div></td>
-        <td><div id="costo_tela">-</div></td>
-        <td><div id="costo_tornillo">-</div></td>
-        <td><div id="costo_silicon">-</div></td>
+        <td><div id="costo_horizontal_basico" onmouseover="MC_Horizontal(46)">-</div></td>
+        <td><div id="costo_adaptador_basico" onmouseover="MC_Adaptador(25)">-</div></td>
+        <td><div id="costo_angulo_basico" onmouseover="MC_Angulo(20)">-</div></td>
+        <td><div id="costo_jal_basico" onmouseover="MC_jal(7)">-</div></td>
+        <td><div id="costo_carret_basico" onmouseover="MC_Carret(7)">-</div></td>
+        <td><div id="costo_vinil_basico">-</div></td>
+        <td><div id="costo_tela_basico">-</div></td>
+        <td><div id="costo_tornillo_basico">-</div></td>
+        <td><div id="costo_silicon_basico">-</div></td>
     </tr>
 </table>
 </body>
