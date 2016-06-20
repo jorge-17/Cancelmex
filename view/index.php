@@ -11,6 +11,9 @@
                     <li>
                         <a href="mosquiteros.php">Mosquiteros</a>
                     </li>
+                    <li>
+                        <a href="fijos.php">Fijos</a>
+                    </li>
                 </ul>
             </div>
         </nav>
