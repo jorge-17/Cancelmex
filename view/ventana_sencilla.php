@@ -53,19 +53,19 @@
                                     <td><div id="riel_l1-">-</div></td>
                                 </tr>
                                 <tr>
-                                    <td>C. Chapa</td>
+                                    <td>C. Chapa*</td>
                                     <td><div id="cchapa_l1-">-</div></td>
                                 </tr>
                                 <tr>
-                                    <td>C. Traslape</td>
+                                    <td>C. Traslape*</td>
                                     <td><div id="ctraslape_l1-">-</div></td>
                                 </tr>
                                 <tr>
-                                    <td>Zoclo pta</td>
+                                    <td>Zoclo pta*</td>
                                     <td><div id="zoclopt_l1-">-</div></td>
                                 </tr>
                                 <tr>
-                                    <td>Zoclito c</td>
+                                    <td>Zoclito c*</td>
                                     <td><div id="zoclitoc_l1-">-</div></td>
                                 </tr>
                                 <tr>
@@ -91,6 +91,26 @@
                                 <tr>
                                     <td>Vinil</td>
                                     <td><div id="vinil_l1-">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Suma total</td>
+                                    <td><div id="suma_total_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Claro</td>
+                                    <td><div class="precios" id="claro_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Tintex</td>
+                                    <td><div class="precios" id="tintex_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Filtrasol</td>
+                                    <td><div class="precios" id="filtrasol_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Esmerilado</td>
+                                    <td><div class="precios" id="esmerilado_l1">-</div></td>
                                 </tr>
                             </table>
                         </td>
@@ -153,6 +173,26 @@
                                     <td>Vinil</td>
                                     <td><div id="vinil_l2">-</div></td>
                                 </tr>
+                                <tr>
+                                    <td>Suma total</td>
+                                    <td><div id="suma_total_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Claro</td>
+                                    <td><div class="precios" id="claro_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Tintex</td>
+                                    <td><div class="precios" id="tintex_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Filtrasol</td>
+                                    <td><div class="precios" id="filtrasol_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Esmerilado</td>
+                                    <td><div class="precios" id="esmerilado_l1">-</div></td>
+                                </tr>
                             </table>
                         </td>
                         <td>
@@ -213,6 +253,26 @@
                                 <tr>
                                     <td>Vinil</td>
                                     <td><div id="vinil_l3">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Suma total</td>
+                                    <td><div id="suma_total_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Claro</td>
+                                    <td><div class="precios" id="claro_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Tintex</td>
+                                    <td><div class="precios" id="tintex_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Filtrasol</td>
+                                    <td><div class="precios" id="filtrasol_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Esmerilado</td>
+                                    <td><div class="precios" id="esmerilado_l1">-</div></td>
                                 </tr>
                             </table>
                         </td>

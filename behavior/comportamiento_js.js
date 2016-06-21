@@ -200,7 +200,7 @@ function ventana_fija(){
     p_traslape_l1=15;
     p_zoclopta_l1=0;
     p_zoclito_l1=24;
-    p_carretillas_l1=13;
+    p_carretillas=13;
     p_jalembutir_l1=10;
     p_silicon=40;
     p_acrilastic=30;
@@ -219,5 +219,37 @@ function ventana_fija(){
     costo_chapa_l1=(alto*2*p_chapa_l1);
     document.getElementById("cchapa_l1-").innerHTML=costo_chapa_l1.toFixed(2);
 
-    costo_traslape_l1=();
+    costo_traslape_l1=(alto*2*p_traslape_l1);
+    document.getElementById("ctraslape_l1-").innerHTML=costo_traslape_l1.toFixed(2);
+
+    costo_zoclop_l1=(ancho*p_zoclopta_l1);
+    document.getElementById("zoclopt_l1-").innerHTML=costo_zoclop_l1.toFixed(2);
+
+    costo_zoclito_l1=(ancho*p_zoclito_l1*4);
+    document.getElementById("zoclitoc_l1-").innerHTML=costo_zoclito_l1.toFixed(2);
+
+    costo_carretillas=(p_carretillas*2);
+    document.getElementById("carretillas_l1-").innerHTML=costo_carretillas.toFixed(2);
+
+    document.getElementById("jalembutir_l1-").innerHTML=p_jalembutir_l1.toFixed(2);
+
+    document.getElementById("silicon_l1-").innerHTML=p_silicon.toFixed(2);
+
+    document.getElementById("acrilastica_l1-").innerHTML=p_acrilastic.toFixed(2);
+
+    costo_vidrio_l1=(ancho*alto*p_vidrio_l1);
+    document.getElementById("vidrio_l1-").innerHTML=costo_vidrio_l1.toFixed(2);
+
+    costo_vinil_l1=((ancho*2)+(alto*4)*p_vinil);
+    document.getElementById("vinil_l1-").innerHTML=costo_vinil_l1.toFixed(2);
+
+    suma_total_l1=costo_jamba_l1+costo_jambas_l1+costo_riel_l1+costo_chapa_l1+costo_traslape_l1+costo_zoclop_l1+costo_zoclito_l1+
+        costo_carretillas+p_jalembutir_l1+p_silicon+p_acrilastic+costo_vidrio_l1+costo_vinil_l1;
+    document.getElementById("suma_total_l1").innerHTML=suma_total_l1.toFixed(2);
+
+    p_claro_l1=1.7;
+    costo_claro_l1=(suma_total_l1*p_claro_l1);
+    document.getElementById("claro_l1").innerHTML=costo_claro_l1.toFixed(2);
+
+
 }
