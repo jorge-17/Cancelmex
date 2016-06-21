@@ -8,11 +8,17 @@
             <div class="container-fluid">
                 <a class="navbar-brand">Cancelmex</a>
                 <ul class="nav navbar-nav">
+                   <li>
+                       <a href="presupuesto.php">Presupuesto</a>
+                   </li>
                     <li>
                         <a href="mosquiteros.php">Mosquiteros</a>
                     </li>
                     <li>
                         <a href="fijos.php">Fijos</a>
+                    </li>
+                    <li>
+                        <a href="ventana_sencilla.php">Ventana Sencilla</a>
                     </li>
                 </ul>
             </div>
