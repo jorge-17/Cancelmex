@@ -21,6 +21,9 @@
                     <li>
                         <a href="ventana_sencilla.php">Ventana Sencilla</a>
                     </li>
+                    <li>
+                        <a href="ventana_c_antepecho.php">Ventana con antepecho</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -53,7 +56,7 @@
                                     <td><div id="riel_l1-">-</div></td>
                                 </tr>
                                 <tr>
-                                    <td>C. Chapa*</td>
+                                    <td>C. Chapa(precio)*</td>
                                     <td><div id="cchapa_l1-">-</div></td>
                                 </tr>
                                 <tr>
@@ -61,11 +64,11 @@
                                     <td><div id="ctraslape_l1-">-</div></td>
                                 </tr>
                                 <tr>
-                                    <td>Zoclo pta*</td>
+                                    <td>Zoclo pta(precio)*</td>
                                     <td><div id="zoclopt_l1-">-</div></td>
                                 </tr>
                                 <tr>
-                                    <td>Zoclito c*</td>
+                                    <td>Zoclito c(se mul * 4)*</td>
                                     <td><div id="zoclitoc_l1-">-</div></td>
                                 </tr>
                                 <tr>
@@ -175,23 +178,23 @@
                                 </tr>
                                 <tr>
                                     <td>Suma total</td>
-                                    <td><div id="suma_total_l1">-</div></td>
+                                    <td><div id="suma_total_l2">-</div></td>
                                 </tr>
                                 <tr>
                                     <td>Claro</td>
-                                    <td><div class="precios" id="claro_l1">-</div></td>
+                                    <td><div class="precios" id="claro_l2">-</div></td>
                                 </tr>
                                 <tr>
                                     <td>Tintex</td>
-                                    <td><div class="precios" id="tintex_l1">-</div></td>
+                                    <td><div class="precios" id="tintex_l2">-</div></td>
                                 </tr>
                                 <tr>
                                     <td>Filtrasol</td>
-                                    <td><div class="precios" id="filtrasol_l1">-</div></td>
+                                    <td><div class="precios" id="filtrasol_l2">-</div></td>
                                 </tr>
                                 <tr>
                                     <td>Esmerilado</td>
-                                    <td><div class="precios" id="esmerilado_l1">-</div></td>
+                                    <td><div class="precios" id="esmerilado_l2">-</div></td>
                                 </tr>
                             </table>
                         </td>
@@ -223,7 +226,7 @@
                                     <td><div id="ctraslape_l3">-</div></td>
                                 </tr>
                                 <tr>
-                                    <td>Zoclo pta</td>
+                                    <td>Zoclo pta(prcio mas bajo que 2")*</td>
                                     <td><div id="zoclopt_l3">-</div></td>
                                 </tr>
                                 <tr>
@@ -247,7 +250,7 @@
                                     <td><div id="acrilastica_l3">-</div></td>
                                 </tr>
                                 <tr>
-                                    <td>Vidrio</td>
+                                    <td>Vidrio(precio = a 2")*</td>
                                     <td><div id="vidrio_l3">-</div></td>
                                 </tr>
                                 <tr>
@@ -256,23 +259,23 @@
                                 </tr>
                                 <tr>
                                     <td>Suma total</td>
-                                    <td><div id="suma_total_l1">-</div></td>
+                                    <td><div id="suma_total_l3">-</div></td>
                                 </tr>
                                 <tr>
                                     <td>Claro</td>
-                                    <td><div class="precios" id="claro_l1">-</div></td>
+                                    <td><div class="precios" id="claro_l3">-</div></td>
                                 </tr>
                                 <tr>
                                     <td>Tintex</td>
-                                    <td><div class="precios" id="tintex_l1">-</div></td>
+                                    <td><div class="precios" id="tintex_l3">-</div></td>
                                 </tr>
                                 <tr>
                                     <td>Filtrasol</td>
-                                    <td><div class="precios" id="filtrasol_l1">-</div></td>
+                                    <td><div class="precios" id="filtrasol_l3">-</div></td>
                                 </tr>
                                 <tr>
                                     <td>Esmerilado</td>
-                                    <td><div class="precios" id="esmerilado_l1">-</div></td>
+                                    <td><div class="precios" id="esmerilado_l3">-</div></td>
                                 </tr>
                             </table>
                         </td>

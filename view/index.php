@@ -20,6 +20,9 @@
                     <li>
                         <a href="ventana_sencilla.php">Ventana Sencilla</a>
                     </li>
+                    <li>
+                        <a href="ventana_c_antepecho.php">Ventana con antepecho</a>
+                    </li>
                 </ul>
             </div>
         </nav>
