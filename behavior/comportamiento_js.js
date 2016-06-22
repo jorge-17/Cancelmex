@@ -505,90 +505,113 @@ function ventana_antepecho(){
     document.getElementById("esmerilado_l2").innerHTML=costo_esmerilado_l2.toFixed(2);
 
      /*-----Linea 3"-----*/
-    p_jamba_l3=42;
-    p_jambas_l3=42;
-    p_riel_l3=30;
-    p_chapa_l3=27;
-    p_traslape_l3=31;
-    p_zoclito_l3=23;
+    p_jamba_l3=65;
+    p_jambas_l3=65;
+    p_riel_l3=47;
+    p_chapa_l3=49;
+    p_traslape_l3=62;
+    p_zoclito_l3=30;
     p_carretillas=13;
     p_jalembutir_l3=25;
-    p_silicon_l3=40;
-    p_acrilastic_l3=30;
-    p_escalonado_l3=35;
-    p_tapabolsa_l3=22;
-    p_vidrio_l3=177;
-    p_vidrio2_l3=170;
+    p_silicon_l3=35;
+    p_acrilastic_l3=22;
+    p_escalonado_l3=50;
+    p_tapabolsa_l3=0;
+    p_vidrio_l3=0;
+    p_vidrio2_l3=0;
     p_vinil=10;
-    p_bolsa_l3=33;
-    p_junquillo_l3=16;
+    p_bolsa_l3=60;
+    p_junquillo_l3=18;
 
-    costo_jamba_l2=(alto*2*p_jamba_l2);
-    document.getElementById("jamba_l2").innerHTML=costo_jamba_l2.toFixed(2);
 
-    costo_jambas_l2=(ancho*p_jambas_l2);
-    document.getElementById("jambas_l2").innerHTML=costo_jambas_l2.toFixed(2);
+    costo_jamba_l3=(alto*2*p_jamba_l3);
+    document.getElementById("jamba_l3").innerHTML=costo_jamba_l3.toFixed(2);
 
-    costo_riel_l2=(ancho*p_riel_l2);
-    document.getElementById("riel_l2").innerHTML=costo_riel_l2.toFixed(2);
+    costo_jambas_l3=(ancho*p_jambas_l3);
+    document.getElementById("jambas_l3").innerHTML=costo_jambas_l3.toFixed(2);
 
-    costo_chapa_l2=(alto*2*p_chapa_l2);
-    document.getElementById("cchapa_l2").innerHTML=costo_chapa_l2.toFixed(2);
+    costo_riel_l3=(ancho*p_riel_l3);
+    document.getElementById("riel_l3").innerHTML=costo_riel_l3.toFixed(2);
 
-    costo_traslape_l2=(alto*2*p_traslape_l2);
-    document.getElementById("ctraslape_l2").innerHTML=costo_traslape_l2.toFixed(2);
+    costo_chapa_l3=(alto*2*p_chapa_l3);
+    document.getElementById("cchapa_l3").innerHTML=costo_chapa_l3.toFixed(2);
 
-    costo_zoclito_l2=(ancho*4*p_zoclito_l2);
-    document.getElementById("zoclito_l2").innerHTML=costo_zoclito_l2.toFixed(2);
+    costo_traslape_l3=(alto*2*p_traslape_l3);
+    document.getElementById("ctraslape_l3").innerHTML=costo_traslape_l3.toFixed(2);
 
-    costo_carretillas_l2=(p_carretillas*2);
-    document.getElementById("carretillas_l2").innerHTML=costo_carretillas_l2.toFixed(2);
+    costo_zoclito_l3=(ancho*2*p_zoclito_l3);
+    document.getElementById("zoclito_l3").innerHTML=costo_zoclito_l3.toFixed(2);
 
-    document.getElementById("jalembutir_l2").innerHTML=p_jalembutir_l2.toFixed(2);
+    costo_carretillas_l3=(p_carretillas*2);
+    document.getElementById("carretillas_l3").innerHTML=costo_carretillas_l3.toFixed(2);
 
-    document.getElementById("silicon_l2").innerHTML=p_silicon_l2.toFixed(2);
+    document.getElementById("jalembutir_l3").innerHTML=p_jalembutir_l3.toFixed(2);
 
-    document.getElementById("acrilastic_l2").innerHTML=p_acrilastic_l2.toFixed(2);
+    document.getElementById("silicon_l3").innerHTML=p_silicon_l3.toFixed(2);
 
-    costo_escalonado_l2=(ancho*p_escalonado_l2);
-    document.getElementById("escalonado_l2").innerHTML=costo_escalonado_l2.toFixed(2);
+    document.getElementById("acrilastic_l3").innerHTML=p_acrilastic_l3.toFixed(2);
 
-    costo_tapabolsa_l2=(ancho*p_tapabolsa_l2);
-    document.getElementById("tapabolsa_l2").innerHTML=costo_tapabolsa_l2.toFixed(2);
+    costo_escalonado_l3=(ancho*p_escalonado_l3);
+    document.getElementById("escalonado_l3").innerHTML=costo_escalonado_l3.toFixed(2);
 
-    costo_vidrio_l2=(ancho*fijo*alto*p_vidrio_l2);
-    document.getElementById("vidrio_l2").innerHTML=costo_vidrio_l2.toFixed(2);
+    costo_tapabolsa_l3=(ancho*p_tapabolsa_l3);
+    document.getElementById("tapabolsa_l3").innerHTML=costo_tapabolsa_l3.toFixed(2);
 
-    costo_vidrio2_l2=(ancho*alto*p_vidrio2_l2);
-    document.getElementById("vidrio2_l2").innerHTML=costo_vidrio2_l2.toFixed(2);
+    costo_vidrio_l3=(ancho*fijo*alto*p_vidrio_l3);
+    document.getElementById("vidrio_l3").innerHTML=costo_vidrio_l3.toFixed(2);
 
-    costo_vinil_l2=(ancho*2)*(alto*4)*p_vinil;
-    document.getElementById("vinil_l2").innerHTML=costo_vinil_l2.toFixed(2);
+    costo_vidrio2_l3=(ancho*alto*p_vidrio2_l3);
+    document.getElementById("vidrio2_l3").innerHTML=costo_vidrio2_l3.toFixed(2);
 
-    costo_bolsa_l2=(ancho*p_bolsa_l2*2);
-    document.getElementById("bolsa_l2").innerHTML=costo_bolsa_l2.toFixed(2);
+    costo_vinil_l3=(ancho*2)*(alto*4)*p_vinil;
+    document.getElementById("vinil_l3").innerHTML=costo_vinil_l3.toFixed(2);
 
-    costo_junquillo_l2=(ancho*p_junquillo_l2);
-    document.getElementById("junquillo_l2").innerHTML=costo_junquillo_l2.toFixed(2);
+    costo_bolsa_l3=(ancho*p_bolsa_l3*2);
+    document.getElementById("bolsa_l3").innerHTML=costo_bolsa_l3.toFixed(2);
 
-    suma_total_l2=costo_jamba_l2+costo_jambas_l2+costo_riel_l2+costo_chapa_l2+costo_traslape_l2+costo_zoclito_l2+
-        costo_carretillas_l2+p_jalembutir_l2+p_silicon_l2+p_acrilastic_l2+costo_escalonado_l2+costo_tapabolsa_l2+
-        costo_vidrio_l2+costo_vidrio2_l2+costo_vinil_l2+costo_bolsa_l2+costo_junquillo_l2;
-    document.getElementById("suma_total_l2").innerHTML=suma_total_l2.toFixed(2);
+    costo_junquillo_l3=(ancho*p_junquillo_l3);
+    document.getElementById("junquillo_l3").innerHTML=costo_junquillo_l3.toFixed(2);
 
-    p_claro_l2=1.8;
-    costo_claro_l2=(suma_total_l2*p_claro_l2);
-    document.getElementById("claro_l2").innerHTML=costo_claro_l2.toFixed(2);
+    suma_total_l3=costo_jamba_l3+costo_jambas_l3+costo_riel_l3+costo_chapa_l3+costo_traslape_l3+costo_zoclito_l3+
+        costo_carretillas_l3+p_jalembutir_l3+p_silicon_l3+p_acrilastic_l3+costo_escalonado_l3+costo_tapabolsa_l3+
+        costo_vidrio_l3+costo_vidrio2_l3+costo_vinil_l3+costo_bolsa_l3+costo_junquillo_l3;
+    document.getElementById("suma_total_l3").innerHTML=suma_total_l3.toFixed(2);
 
-    p_tintex_l2=30;
-    costo_tintex_l2=(suma_total_l2*1.7)+(ancho*alto*fijo*p_tintex_l2);
-    document.getElementById("tintex_l2").innerHTML=costo_tintex_l2.toFixed(2);
+    p_claro_l3=1.8;
+    costo_claro_l3=(suma_total_l3*p_claro_l3);
+    document.getElementById("claro_l3").innerHTML=costo_claro_l3.toFixed(2);
 
-    p_filtrasol_l2=30;
-    costo_filtrasol_l2=(suma_total_l2*1.7)+(ancho*alto*fijo*p_filtrasol_l2);
-    document.getElementById("filtrasol_l2").innerHTML=costo_filtrasol_l2.toFixed(2);
+    p_tintex_l3=80;
+    costo_tintex_l3=(suma_total_l3*1.7)+(ancho*alto*fijo*p_tintex_l3);
+    document.getElementById("tintex_l3").innerHTML=costo_tintex_l3.toFixed(2);
 
-    p_esmerilado_l2=120;
-    costo_esmerilado_l2=(suma_total_l2*1.7)+(ancho*alto*fijo*p_esmerilado_l2);
-    document.getElementById("esmerilado_l2").innerHTML=costo_esmerilado_l2.toFixed(2);
+    p_filtrasol_l3=30;
+    costo_filtrasol_l3=(suma_total_l3*1.7)+(ancho*alto*fijo*p_filtrasol_l3);
+    document.getElementById("filtrasol_l3").innerHTML=costo_filtrasol_l3.toFixed(2);
+
+    p_esmerilado_l3=120;
+    costo_esmerilado_l3=(suma_total_l3*1.7)+(ancho*alto*fijo*p_esmerilado_l3);
+    document.getElementById("esmerilado_l3").innerHTML=costo_esmerilado_l3.toFixed(2);
+}
+
+function ventana_3_hojas(){
+    alto=document.getElementById("alto_V3H").value;
+    ancho=document.getElementById("ancho_V3H").value;
+
+    /*-----Linea 2"-----*/
+    p_jamba_l2=54;
+    p_jambas_l2=54;
+    p_riel_l2=32;
+    p_chapa_l2=27;
+    p_traslape_l2=31;
+    p_zoclitopta_l2=44;
+    p_zoclitoc_l2=23;
+    p_carretillas_l2=13;
+    p_jalembutir_l2=25;
+    p_silicon=35;
+    p_vidrio_l2=170;
+    p_vinil=7;
+    p_acrilastic=22;
+
+    costo_jamba_l2=()
 }

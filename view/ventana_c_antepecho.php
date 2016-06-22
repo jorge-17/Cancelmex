@@ -12,17 +12,25 @@
                    <li>
                        <a href="presupuesto.php">Presupuesto</a>
                    </li>
-                    <li>
-                        <a href="mosquiteros.php">Mosquiteros</a>
-                    </li>
-                    <li>
-                        <a href="fijos.php">Fijos</a>
-                    </li>
-                    <li>
-                        <a href="ventana_sencilla.php">Ventana Sencilla</a>
-                    </li>
-                    <li>
-                        <a href="ventana_c_antepecho.php">Ventana con antepecho</a>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Cotizaciones <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="mosquiteros.php">Mosquiteros</a>
+                            </li>
+                            <li>
+                                <a href="fijos.php">Fijos</a>
+                            </li>
+                            <li>
+                                <a href="ventana_sencilla.php">Ventana Sencilla</a>
+                            </li>
+                            <li>
+                                <a href="ventana_c_antepecho.php">Ventana con antepecho</a>
+                            </li>
+                            <li>
+                                <a href="ventana_tres_hojas.php">Ventana tres hojas</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -65,7 +73,7 @@
                                    <td><div id="ctraslape_l2">-</div></td>
                                </tr>
                                <tr>
-                                   <td>Zoclito c(se mul * 4)*</td>
+                                   <td>Zoclito c<div class="anotaciones">(se mul * 4)*</div></td>
                                    <td><div id="zoclito_l2">-</div></td>
                                </tr>
                                <tr>
@@ -81,7 +89,7 @@
                                    <td><div id="silicon_l2">-</div></td>
                                </tr>
                                <tr>
-                                   <td>Acrilastica</td>
+                                   <td>Acrilastic</td>
                                    <td><div id="acrilastic_l2">-</div></td>
                                </tr>
                                <tr>
@@ -118,19 +126,19 @@
                                </tr>
                                <tr>
                                    <td>Claro</td>
-                                   <td><div id="claro_l2">-</div></td>
+                                   <td><div id="claro_l2" class="precios">-</div></td>
                                </tr>
                                <tr>
                                    <td>Tintex</td>
-                                   <td><div id="tintex_l2">-</div></td>
+                                   <td><div id="tintex_l2" class="precios">-</div></td>
                                </tr>
                                <tr>
-                                   <td>Filtrasol(mul = que tintex)</td>
-                                   <td><div id="filtrasol_l2">-</div></td>
+                                   <td>Filtrasol<div class="anotaciones">(mul = que tintex)*</div></td>
+                                   <td><div id="filtrasol_l2" class="precios">-</div></td>
                                </tr>
                                <tr>
                                    <td>Esmerilado</td>
-                                   <td><div id="esmerilado_l2">-</div></td>
+                                   <td><div id="esmerilado_l2" class="precios">-</div></td>
                                </tr>
                            </table>
                        </td>
@@ -172,11 +180,11 @@
                                    <td><div id="jalembutir_l3">-</div></td>
                                </tr>
                                <tr>
-                                   <td>Silicon</td>
+                                   <td>Silicon<div class="anotaciones">(costo menor que 2")*</div></td>
                                    <td><div id="silicon_l3">-</div></td>
                                </tr>
                                <tr>
-                                   <td>Acrilastica</td>
+                                   <td>Acrilastic<div class="anotaciones">(costo menor que 2")*</div></td>
                                    <td><div id="acrilastic_l3">-</div></td>
                                </tr>
                                <tr>
@@ -184,15 +192,15 @@
                                    <td><div id="escalonado_l3">-</div></td>
                                </tr>
                                <tr>
-                                   <td>Tapa bolsa</td>
+                                   <td>Tapa bolsa<div class="anotaciones">(sin precio)*</div></td>
                                    <td><div id="tapabolsa_l3">-</div></td>
                                </tr>
                                <tr>
-                                   <td>Vidrio</td>
+                                   <td>Vidrio<div class="anotaciones">(sin precio)*</div></td>
                                    <td><div id="vidrio_l3">-</div></td>
                                </tr>
                                <tr>
-                                   <td>Vidrio</td>
+                                   <td>Vidrio<div class="anotaciones">(sin precio)*</div></td>
                                    <td><div id="vidrio2_l3"></div></td>
                                </tr>
                                <tr>
@@ -213,19 +221,19 @@
                                </tr>
                                <tr>
                                    <td>Claro</td>
-                                   <td><div id="claro_l3">-</div></td>
+                                   <td><div id="claro_l3" class="precios">-</div></td>
                                </tr>
                                <tr>
                                    <td>Tintex</td>
-                                   <td><div id="tintex_l3">-</div></td>
+                                   <td><div id="tintex_l3" class="precios">-</div></td>
                                </tr>
                                <tr>
                                    <td>Filtrasol</td>
-                                   <td><div id="filtrasol_l3">-</div></td>
+                                   <td><div id="filtrasol_l3" class="precios">-</div></td>
                                </tr>
                                <tr>
                                    <td>Esmerilado</td>
-                                   <td><div id="esmerilado_l3">-</div></td>
+                                   <td><div id="esmerilado_l3" class="precios">-</div></td>
                                </tr>
                            </table>
                        </td>
@@ -235,4 +243,6 @@
         </div>
     </body>
     <script type="text/javascript" src="../behavior/comportamiento_js.js"></script>
+    <script type="text/javascript" src="../behavior/jquery.min.js"></script>
+    <script type="text/javascript" src="../style/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 </html>
