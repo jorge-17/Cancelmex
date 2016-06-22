@@ -7,7 +7,7 @@
     <body>
        <nav class="navbar navbar-default">
             <div class="container-fluid">
-                <a class="navbar-brand">Cancelmex</a>
+                <a href="index.php" class="navbar-brand">Cancelmex</a>
                 <ul class="nav navbar-nav">
                    <li>
                        <a href="presupuesto.php">Presupuesto</a>
@@ -49,7 +49,7 @@
                 <th>Lineas</th>
                 <th>Bolsa superior</th>
                 <th>Bolsa lateral</th>
-                <th>JUnquillo</th>
+                <th>Junquillo</th>
                 <th>Escalonado</th>
                 <th>Vinil</th>
                 <th>Silicon</th>

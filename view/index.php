@@ -6,7 +6,7 @@
     <body>
         <nav class="navbar navbar-default">
             <div class="container-fluid">
-                <a class="navbar-brand">Cancelmex</a>
+                <a href="index.php" class="navbar-brand">Cancelmex</a>
                 <ul class="nav navbar-nav">
                    <li>
                        <a href="presupuesto.php">Presupuesto</a>

@@ -8,7 +8,7 @@
 <body>
 <nav class="navbar navbar-default">
             <div class="container-fluid">
-                <a class="navbar-brand">Cancelmex</a>
+                <a href="index.php" class="navbar-brand">Cancelmex</a>
                 <ul class="nav navbar-nav">
                    <li>
                        <a href="presupuesto.php">Presupuesto</a>
@@ -91,8 +91,8 @@
             		<td colspan="12"><center>Mosquitero corredizo</center></td>
 	            </tr>
 	            <tr>
-		            <td colspan="2">Alto: <input class="form-control" type="text" name="alto_MC" id="alto_MC"></td>
-		            <td colspan="2">Ancho: <input class="form-control" type="text" name="ancho_MC" id="ancho_MC"></td>
+		            <td colspan="2"><input class="form-control" placeholder="Alto" type="text" name="alto_MC" id="alto_MC"></td>
+		            <td colspan="2"><input class="form-control" placeholder="Ancho" type="text" name="ancho_MC" id="ancho_MC"></td>
                     <td colspan="2"><button onclick="M_corredizo()" class="btn btn-primary">Calcular</button></td>
 	            </tr>
 	            <tr>
@@ -121,7 +121,7 @@
                     <td><div id="costo_tornillo_basico">-</div></td>
                     <td><div id="costo_silicon_basico">-</div></td>
                     <td><div id="suma_total_basico">-</div></td>
-                    <td><div id="costo_total_basico">-</div></td>
+                    <td><div class="precios" id="costo_total_basico">-</div></td>
                 </tr>
                 <tr>
                     <td><div id="costo_vertical_color">-</div></td>
@@ -135,7 +135,7 @@
                     <td><div id="costo_tornillo_color">-</div></td>
                     <td><div id="costo_silicon_color">-</div></td>
                     <td><div id="suma_total_color">-</div></td>
-                    <td><div id="costo_total_color">-</div></td>
+                    <td><div class="precios" id="costo_total_color">-</div></td>
                 </tr>
             </table>
         </div>

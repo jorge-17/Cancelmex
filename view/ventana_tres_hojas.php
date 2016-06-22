@@ -7,7 +7,7 @@
     <body>
         <nav class="navbar navbar-default">
             <div class="container-fluid">
-                <a class="navbar-brand">Cancelmex</a>
+                <a href="index.php" class="navbar-brand">Cancelmex</a>
                 <ul class="nav navbar-nav">
                    <li>
                        <a href="presupuesto.php">Presupuesto</a>
@@ -92,12 +92,12 @@
                                     <td><div id="silicon_l2">-</div></td>
                                 </tr>
                                 <tr>
-                                    <td>Vinil<div class="anotaciones">(ancho*2)+(alto*6)*7</div></td>
-                                    <td><div id="vinil_l2">-</div></td>
-                                </tr>
-                                <tr>
                                     <td>Vidrio</td>
                                     <td><div id="vidrio_l2">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Vinil<div class="anotaciones">(ancho*2)+(alto*6)*7</div></td>
+                                    <td><div id="vinil_l2">-</div></td>
                                 </tr>
                                 <tr>
                                     <td>Acrilastic</td>
@@ -171,12 +171,12 @@
                                     <td><div id="silicon_l3">-</div></td>
                                 </tr>
                                 <tr>
-                                    <td>Vinil<div class="anotaciones">(alto*2)+(ancho*6)*7</div></td>
-                                    <td><div id="vinil_l3">-</div></td>
-                                </tr>
-                                <tr>
                                     <td>Vidrio</td>
                                     <td><div id="vidrio_l3">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Vinil<div class="anotaciones">(alto*2)+(ancho*6)*7</div></td>
+                                    <td><div id="vinil_l3">-</div></td>
                                 </tr>
                                 <tr>
                                     <td>Acrilastic</td>
