@@ -37,20 +37,24 @@
         </nav>
         <div class="contenido_e" align="center">
             <div class="contenido_i">
-               <table class="table">
+               <table class="centered">
+                   <thead>
                     <tr>
                         <td><input type="text" class="form-control" id="alto_V3H" placeholder="Alto"></td>
                         <td><input type="text" class="form-control" id="ancho_V3H" placeholder="Ancho"></td>
                         <td><button onclick="ventana_3_hojas()" class="waves-effect waves-teal btn-flat">Calcular</button></td>
                     </tr>
+                    </thead>
                 </table>
-                <table class="table">
+                <table class="centered">
                     <tr>
                         <td>
                             <table class="table">
+                               <thead>
                                 <tr>
                                     <th colspan="2"><center>Linea 2"</center></th>
                                 </tr>
+                                </thead>
                                 <tr>
                                     <td>Jamba</td>
                                     <td><div id="jamba_l2">-</div></td>
@@ -127,9 +131,11 @@
                         </td>
                         <td>
                             <table class="table">
+                               <thead>
                                 <tr>
                                     <th colspan="2"><center>Linea 3"</center></th>
                                 </tr>
+                                </thead>
                                 <tr>
                                     <td>Jamba</td>
                                     <td><div id="jamba_l3">-</div></td>
