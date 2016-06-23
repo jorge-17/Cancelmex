@@ -1,20 +1,11 @@
 <html>
     <head>
         <title>Ventana Tres Hojas</title>
-        <link rel="stylesheet" type="text/css" href="../style/bootstrap-3.3.6-dist/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../style/materialize/css/materialize.css">
         <link rel="stylesheet" type="text/css" href="../style/estilos.css">
     </head>
     <body>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <a href="index.php" class="navbar-brand">Cancelmex</a>
-                <ul class="nav navbar-nav">
-                   <li>
-                       <a href="presupuesto.php">Presupuesto</a>
-                   </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown">Cotizaciones <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
+       <ul class="dropdown-content" id="dropdown1">
                             <li>
                                 <a href="mosquiteros.php">Mosquiteros</a>
                             </li>
@@ -31,6 +22,15 @@
                                 <a href="ventana_tres_hojas.php">Ventana tres hojas</a>
                             </li>
                         </ul>
+        <nav class="nav">
+            <div class="nav-wrapper">
+                <a href="index.php" class="brand-logo">Cancelmex</a>
+                <ul class="right hide-on-med-and-down">
+                   <li>
+                       <a href="presupuesto.php">Presupuesto</a>
+                   </li>
+                    <li class="dropdown">
+                        <a class="dropdown-button" data-activates="dropdown1">Cotizaciones <i class="material-icons right">arrow_drop_down</i></span></a>
                     </li>
                 </ul>
             </div>
@@ -41,7 +41,7 @@
                     <tr>
                         <td><input type="text" class="form-control" id="alto_V3H" placeholder="Alto"></td>
                         <td><input type="text" class="form-control" id="ancho_V3H" placeholder="Ancho"></td>
-                        <td><button onclick="ventana_3_hojas()" class="btn btn-primary">Calcular</button></td>
+                        <td><button onclick="ventana_3_hojas()" class="waves-effect waves-teal btn-flat">Calcular</button></td>
                     </tr>
                 </table>
                 <table class="table">
@@ -211,5 +211,5 @@
     </body>
     <script type="text/javascript" src="../behavior/comportamiento_js.js"></script>
     <script type="text/javascript" src="../behavior/jquery.min.js"></script>
-    <script type="text/javascript" src="../style/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../style/materialize/js/materialize.min.js"></script>
 </html>
