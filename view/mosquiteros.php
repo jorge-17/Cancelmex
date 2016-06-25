@@ -31,6 +31,9 @@
                             <li>
                                 <a href="ventana_tres_hojas.php">Ventana tres hojas</a>
                             </li>
+                            <li>
+                                <a href="ventana_cuatro_hojas.php">Ventana cuatro hojas</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
