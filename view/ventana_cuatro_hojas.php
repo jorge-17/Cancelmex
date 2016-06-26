@@ -49,7 +49,164 @@
                 </table>
                 <table class="table">
                     <tr>
-                        <th colspan="2"><center>Linea 2"</center></th>
+                        <td>
+                            <table class="table">
+                                <tr>
+                                    <th colspan="2">Linea 2"</th>
+                                </tr>
+                                <tr>
+                                    <td>Jamba</td>
+                                    <td><div id="jamba_l2">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Jamba sup</td>
+                                    <td><div id="jambas_l2">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Riel</td>
+                                    <td><div id="riel_l2">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>C. Chapa</td>
+                                    <td><div id="chapa_l2">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>C. Traslape</td>
+                                    <td><div id="traslape_l2">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Zoclito pta</td>
+                                    <td><div id="zoclitopta_l2"></div></td>
+                                </tr>
+                                <tr>
+                                    <td>Zoclo c.</td>
+                                    <td><div id="zoclitoc_l2">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Carretillas</td>
+                                    <td><div id="carretillas_l2">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Jal. Embutir</td>
+                                    <td><div id="jalembutir_l2">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Silicon</td>
+                                    <td><div id="silicon_l2">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Acrilastic</td>
+                                    <td><div id="acrilastic_l2">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Vidrio</td>
+                                    <td><div id="vidrio_l2">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Vinil</td>
+                                    <td><div id="vinil_l2">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Suma total</td>
+                                    <td><div id="suma_total_l2">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Claro</td>
+                                    <td><div id="claro_l2">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Tintex</td>
+                                    <td><div id="tintex_l2">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>FIltrasol</td>
+                                    <td><div id="filtrasol_l2">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Esmerilado</td>
+                                    <td><div id="esmerilado_l2">-</div></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="table">
+                                <tr>
+                                    <th colspan="2">Linea 3"</th>
+                                </tr>
+                                <tr>
+                                    <td>Jamba</td>
+                                    <td><div id="jamba_l3">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Jamba sup</td>
+                                    <td><div id="jambas_l3">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Riel</td>
+                                    <td><div id="riel_l3">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>C. Chapa</td>
+                                    <td><div id="chapa_l3">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>C. Traslape</td>
+                                    <td><div id="traslape_l3">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Zoclito pta</td>
+                                    <td><div id="zoclitopta_l3"></div></td>
+                                </tr>
+                                <tr>
+                                    <td>Zoclo c.</td>
+                                    <td><div id="zoclitoc_l3">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Carretillas</td>
+                                    <td><div id="carretillas_l3">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Jal. Embutir</td>
+                                    <td><div id="jalembutir_l3">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Silicon</td>
+                                    <td><div id="silicon_l3">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Acrilastic</td>
+                                    <td><div id="acrilastic_l3">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Vidrio</td>
+                                    <td><div id="vidrio_l3">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Vinil</td>
+                                    <td><div id="vinil_l3">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Suma total</td>
+                                    <td><div id="suma_total_l3">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Claro</td>
+                                    <td><div id="claro_l3">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Tintex</td>
+                                    <td><div id="tintex_l3">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>FIltrasol</td>
+                                    <td><div id="filtrasol_l3">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Esmerilado</td>
+                                    <td><div id="esmerilado_l3">-</div></td>
+                                </tr>
+                            </table>
+                        </td>
                     </tr>
                 </table>
             </div>

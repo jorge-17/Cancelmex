@@ -741,3 +741,27 @@ function ventana_3_hojas(){
     costo_esmerilado_l3=(costo_claro_l3)+(ancho*alto*p_esmerilado_l3);
     document.getElementById("esmerilado_l3").innerHTML=costo_esmerilado_l3.toFixed(2);
 }
+
+function ventana_4_hojas(){
+    alto=document.getElementById("alto_Vc4").value;
+    ancho=document.getElementById("ancho_Vc4").value;
+
+    p_jamba_l2=54;
+    costo_jamba_l2=(alto*2*p_jamba_l2);
+    document.getElementById("jamba_l2").innerHTML=costo_jamba_l2.toFixed(2);
+
+    p_jambas_l2=54;
+    costo_
+    p_riel_l2=32;
+    p_chapa_l2=27;
+    p_traslape_l2=31;
+    p_zoclitopta_l2=43;
+    p_zocloc_l2=20;
+    p_carretillas_l2=13;
+    p_jalembutir_l2=25;
+    p_silicon=35;
+    p_acrilastic=22;
+    p_vidrio=170;
+    p_vinil=7;
+
+}
