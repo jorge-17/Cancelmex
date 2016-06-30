@@ -34,6 +34,9 @@
                             <li>
                                 <a href="ventana_cuatro_hojas.php">Ventana cuatro hojas</a>
                             </li>
+                            <li>
+                                <a href="pta_toda_vidrio.php">Puerta de Vidrio</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>

@@ -1,11 +1,11 @@
 <html>
     <head>
-        <title>Ventana de cuatro hojas</title>
+        <title>Puerta de Vidrio</title>
         <link rel="stylesheet" type="text/css" href="../style/estilos.css">
         <link rel="stylesheet" type="text/css" href="../style/bootstrap-3.3.6-dist/css/bootstrap.css">
     </head>
     <body>
-       <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <a href="index.php" class="navbar-brand">Cancelmex</a>
                 <ul class="nav navbar-nav">
@@ -45,9 +45,9 @@
             <div class="contenido_i">
                 <table class="table">
                     <tr>
-                        <td><input class="form-control" id="ancho_Vc4" placeholder="Ancho"></td>
-                        <td><input class="form-control" id="alto_Vc4" placeholder="Alto"></td>
-                        <td><button onclick="ventana_4_hojas()" class="btn btn-primary">Calcular</button></td>
+                        <td><input class="form-control" id="ancho_pta_v" placeholder="Ancho"></td>
+                        <td><input class="form-control" id="alto_pta_v" placeholder="Alto"></td>
+                        <td><button onclick="" class="btn btn-primary">Calcular</button></td>
                     </tr>
                 </table>
                 <table class="table">
@@ -55,141 +55,62 @@
                         <td>
                             <table class="table">
                                 <tr>
-                                    <th colspan="2" class="encabezados_tablas"><center>Linea 2"</center></th>
-                                </tr>
-                                <tr>
-                                    <td>Jamba</td>
-                                    <td><div id="jamba_l2">-</div></td>
-                                </tr>
-                                <tr>
-                                    <td>Jamba sup</td>
-                                    <td><div id="jambas_l2">-</div></td>
-                                </tr>
-                                <tr>
-                                    <td>Riel</td>
-                                    <td><div id="riel_l2">-</div></td>
-                                </tr>
-                                <tr>
-                                    <td>C. Chapa</td>
-                                    <td><div id="chapa_l2">-</div></td>
-                                </tr>
-                                <tr>
-                                    <td>C. Traslape</td>
-                                    <td><div id="traslape_l2">-</div></td>
-                                </tr>
-                                <tr>
-                                    <td>Zoclito pta</td>
-                                    <td><div id="zoclitopta_l2"></div></td>
-                                </tr>
-                                <tr>
-                                    <td>Zoclo c.</td>
-                                    <td><div id="zoclitoc_l2">-</div></td>
-                                </tr>
-                                <tr>
-                                    <td>Carretillas</td>
-                                    <td><div id="carretillas_l2">-</div></td>
-                                </tr>
-                                <tr>
-                                    <td>Jal. Embutir</td>
-                                    <td><div id="jalembutir_l2">-</div></td>
-                                </tr>
-                                <tr>
-                                    <td>Silicon</td>
-                                    <td><div id="silicon_l2">-</div></td>
-                                </tr>
-                                <tr>
-                                    <td>Acrilastic</td>
-                                    <td><div id="acrilastic_l2">-</div></td>
-                                </tr>
-                                <tr>
-                                    <td>Vidrio</td>
-                                    <td><div id="vidrio_l2">-</div></td>
-                                </tr>
-                                <tr>
-                                    <td>Vinil</td>
-                                    <td><div id="vinil_l2">-</div></td>
-                                </tr>
-                                <tr>
-                                    <td>Suma total</td>
-                                    <td><div id="suma_total_l2">-</div></td>
-                                </tr>
-                                <tr>
-                                    <td>Claro</td>
-                                    <td><div class="precios" id="claro_l2">-</div></td>
-                                </tr>
-                                <tr>
-                                    <td>Tintex</td>
-                                    <td><div class="precios" id="tintex_l2">-</div></td>
-                                </tr>
-                                <tr>
-                                    <td>FIltrasol</td>
-                                    <td><div class="precios" id="filtrasol_l2">-</div></td>
-                                </tr>
-                                <tr>
-                                    <td>Esmerilado</td>
-                                    <td><div class="precios" id="esmerilado_l2">-</div></td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td>
-                            <table class="table">
-                                <tr>
                                     <th colspan="2" class="encabezados_tablas"><center>Linea 3"</center></th>
                                 </tr>
                                 <tr>
-                                    <td>Jamba</td>
-                                    <td><div id="jamba_l3">-</div></td>
+                                    <td>Canal Liso lateral</td>
+                                    <td><div id="canall_l3">-</div></td>
                                 </tr>
                                 <tr>
-                                    <td>Jamba sup</td>
-                                    <td><div id="jambas_l3">-</div></td>
+                                    <td>Canal Liso Superior</td>
+                                    <td><div id="canals_l3">-</div></td>
                                 </tr>
                                 <tr>
-                                    <td>Riel</td>
-                                    <td><div id="riel_l3">-</div></td>
+                                    <td>Batiente 3/4</td>
+                                    <td><div id="batiente_l3">-</div></td>
                                 </tr>
                                 <tr>
                                     <td>C. Chapa</td>
                                     <td><div id="chapa_l3">-</div></td>
                                 </tr>
                                 <tr>
-                                    <td>C. Traslape</td>
-                                    <td><div id="traslape_l3">-</div></td>
+                                    <td>Cabezal</td>
+                                    <td><div id="cabezal_l3">-</div></td>
                                 </tr>
                                 <tr>
-                                    <td>Zoclito pta</td>
-                                    <td><div id="zoclitopta_l3"></div></td>
-                                </tr>
-                                <tr>
-                                    <td>Zoclo c.</td>
-                                    <td><div id="zoclitoc_l3">-</div></td>
-                                </tr>
-                                <tr>
-                                    <td>Carretillas</td>
-                                    <td><div id="carretillas_l3">-</div></td>
-                                </tr>
-                                <tr>
-                                    <td>Jal. Embutir</td>
-                                    <td><div id="jalembutir_l3">-</div></td>
-                                </tr>
-                                <tr>
-                                    <td>Silicon</td>
-                                    <td><div id="silicon_l3">-</div></td>
-                                </tr>
-                                <tr>
-                                    <td>Acrilastic</td>
-                                    <td><div id="acrilastic_l3">-</div></td>
+                                    <td>Zoclo pta</td>
+                                    <td><div id="zocolopta_l3">-</div></td>
                                 </tr>
                                 <tr>
                                     <td>Vidrio</td>
                                     <td><div id="vidrio_l3">-</div></td>
                                 </tr>
                                 <tr>
+                                    <td>Pivote descentrado</td>
+                                    <td><div class="pivoted_l3">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Chapa doble manija</td>
+                                    <td><div id="chapadm_l3">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Acrilastic</td>
+                                    <td><div id="acrilastica_l3">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Tornillos</td>
+                                    <td><div id="tornillos_l3">-</div></td>
+                                </tr>
+                                <tr>
                                     <td>Vinil</td>
                                     <td><div id="vinil_l3">-</div></td>
                                 </tr>
                                 <tr>
-                                    <td>Suma total</td>
+                                    <td>Junquillo</td>
+                                    <td><div id="junquillo_l3">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Suma Total</td>
                                     <td><div id="suma_total_l3">-</div></td>
                                 </tr>
                                 <tr>
@@ -201,12 +122,91 @@
                                     <td><div class="precios" id="tintex_l3">-</div></td>
                                 </tr>
                                 <tr>
-                                    <td>FIltrasol</td>
+                                    <td>Filtrasol</td>
                                     <td><div class="precios" id="filtrasol_l3">-</div></td>
                                 </tr>
                                 <tr>
                                     <td>Esmerilado</td>
                                     <td><div class="precios" id="esmerilado_l3">-</div></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table class="table">
+                                <tr>
+                                    <th colspan="2" class="encabezados_tablas"><center>Linea 1 3/4"</center></th>
+                                </tr>
+                                <tr>
+                                    <td>Canal Liso lateral</td>
+                                    <td><div id="canall_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Canal Liso Superior</td>
+                                    <td><div id="canals_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Batiente 3/4</td>
+                                    <td><div id="batiente_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>C. Chapa</td>
+                                    <td><div id="chapa_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Cabezal</td>
+                                    <td><div id="cabezal_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Zoclo pta</td>
+                                    <td><div id="zocolopta_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Vidrio</td>
+                                    <td><div id="vidrio_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Pivote descentrado</td>
+                                    <td><div class="pivoted_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Chapa doble manija</td>
+                                    <td><div id="chapadm_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Acrilastic</td>
+                                    <td><div id="acrilastica_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Tornillos</td>
+                                    <td><div id="tornillos_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Vinil</td>
+                                    <td><div id="vinil_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Junquillo</td>
+                                    <td><div id="junquillo_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Suma Total</td>
+                                    <td><div id="suma_total_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Claro</td>
+                                    <td><div class="precios" id="claro_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Tintex</td>
+                                    <td><div class="precios" id="tintex_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Filtrasol</td>
+                                    <td><div class="precios" id="filtrasol_l1">-</div></td>
+                                </tr>
+                                <tr>
+                                    <td>Esmerilado</td>
+                                    <td><div class="precios" id="esmerilado_l1">-</div></td>
                                 </tr>
                             </table>
                         </td>

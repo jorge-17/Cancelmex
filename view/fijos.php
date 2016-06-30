@@ -33,6 +33,9 @@
                             <li>
                                 <a href="ventana_cuatro_hojas.php">Ventana cuatro hojas</a>
                             </li>
+                            <li>
+                                <a href="pta_toda_vidrio.php">Puerta de Vidrio</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -49,52 +52,124 @@
         </table>
         <table class="table">
             <tr>
-                <th>Lineas</th>
-                <th>Bolsa superior</th>
-                <th>Bolsa lateral</th>
-                <th>Junquillo</th>
-                <th>Escalonado</th>
-                <th>Vinil</th>
-                <th>Silicon</th>
-                <th>Acrilastic</th>
-                <th>Vidrio</th>
-                <th>ITEM 1</th>
-                <th>ITEM 2</th>
-                <th>Claro</th>
-                <th>Tintex</th>
-                <th>Filtrasol</th>
-            </tr>
-            <tr>
-                <th>Linea 2"</th>
-                <td><div id="bs_2">-</div></td>
-                <td><div id="bl_2">-</div></td>
-                <td><div id="jun_2">-</div></td>
-                <td><div id="esc_2">-</div></td>
-                <td><div id="vin_2">-</div></td>
-                <td><div id="sil_2">-</div></td>
-                <td><div id="acri_2">-</div></td>
-                <td><div id="vid_2">-</div></td>
-                <td><div id="suma_total_2">-</div></td>
-                <td><div id="costo_total_2">-</div></td>
-                <td><div class="precios" id="p_claro_2">-</div></td>
-                <td><div class="precios" id="p_tintex_2">-</div></td>
-                <td><div class="precios" id="p_filtrasol_2">-</div></td>
-            </tr>
-            <tr>
-                <th>Linea 3"</th>
-                <td><div id="bs_3">-</div></td>
-                <td><div id="bl_3">-</div></td>
-                <td><div id="jun_3">-</div></td>
-                <td><div id="esc_3">-</div></td>
-                <td><div id="vin_3">-</div></td>
-                <td><div id="sil_3">-</div></td>
-                <td><div id="acri_3">-</div></td>
-                <td><div id="vid_3">-</div></td>
-                <td><div id="suma_total_3">-</div></td>
-                <td><div id="costo_total_3">-</div></td>
-                <td><div class="precios" id="p_claro_3">-</div></td>
-                <td><div class="precios" id="p_tintex_3">-</div></td>
-                <td><div class="precios" id="p_filtrasol_3">-</div></td>
+               <td>
+                   <table class="table">
+                       <tr>
+                           <th colspan="2" class="encabezados_tablas"><center>Linea 2"</center></th>
+                       </tr>
+                       <tr>
+                           <td>Bolsa superior</td>
+                           <td><div id="bs_2">-</div></td>
+                       </tr>
+                       <tr>
+                           <td>Bolsa lateral</td>
+                           <td><div id="bl_2">-</div></td>
+                       </tr>
+                       <tr>
+                           <td>Junquillo</td>
+                           <td><div id="jun_2">-</div></td>
+                       </tr>
+                       <tr>
+                           <td>Escalonado</td>
+                           <td><div id="esc_2">-</div></td>
+                       </tr>
+                       <tr>
+                           <td>Vinil</td>
+                           <td><div id="vin_2">-</div></td>
+                       </tr>
+                       <tr>
+                           <td>Silicon</td>
+                           <td><div id="sil_2">-</div></td>
+                       </tr>
+                       <tr>
+                           <td>Acrilastic</td>
+                           <td><div id="acri_2">-</div></td>
+                       </tr>
+                       <tr>
+                           <td>Vidrio</td>
+                           <td><div id="vid_2">-</div></td>
+                       </tr>
+                       <tr>
+                           <td>Suma Total</td>
+                           <td><div id="suma_total_2">-</div></td>
+                       </tr>
+                       <tr>
+                           <td>Costo Total</td>
+                           <td><div id="costo_total_2">-</div></td>
+                       </tr>
+                       <tr>
+                           <td>Claro</td>
+                           <td><div class="precios" id="p_claro_2">-</div></td>
+                       </tr>
+                       <tr>
+                           <td>Tintex</td>
+                           <td><div class="precios" id="p_tintex_2">-</div></td>
+                       </tr>
+                       <tr>
+                           <td>Filtrasol</td>
+                           <td><div class="precios" id="p_filtrasol_2">-</div></td>
+                       </tr>
+                   </table>
+               </td>
+               <td>
+                   <table class="table">
+                       <tr>
+                           <th class="encabezados_tablas" colspan="2"><center>Linea 3"</center></th>
+                       </tr>
+                       <tr>
+                           <td>Bolsa superior</td>
+                           <td><div id="bs_3">-</div></td>
+                       </tr>
+                       <tr>
+                           <td>Bolsa lateral</td>
+                           <td><div id="bl_3">-</div></td>
+                       </tr>
+                       <tr>
+                           <td>Junquillo</td>
+                           <td><div id="jun_3">-</div></td>
+                       </tr>
+                       <tr>
+                           <td>Escalonado</td>
+                           <td><div id="esc_3">-</div></td>
+                       </tr>
+                       <tr>
+                           <td>Vinil</td>
+                           <td><div id="vin_3">-</div></td>
+                       </tr>
+                       <tr>
+                           <td>Silicon</td>
+                           <td><div id="sil_3">-</div></td>
+                       </tr>
+                       <tr>
+                           <td>Acrilastic</td>
+                           <td><div id="acri_3">-</div></td>
+                       </tr>
+                       <tr>
+                           <td>Vidrio</td>
+                           <td><div id="vid_3">-</div></td>
+                       </tr>
+                       <tr>
+                           <td>Suma Total</td>
+                           <td><div id="suma_total_3">-</div></td>
+                       </tr>
+                       <tr>
+                           <td>Costo Total</td>
+                           <td><div id="costo_total_3">-</div></td>
+                       </tr>
+                       <tr>
+                           <td>Claro</td>
+                           <td><div class="precios" id="p_claro_3">-</div></td>
+                       </tr>
+                       <tr>
+                           <td>Tintex</td>
+                           <td><div class="precios" id="p_tintex_3">-</div></td>
+                       </tr>
+                       <tr>
+                           <td>Filtrasol</td>
+                           <td><div class="precios" id="p_filtrasol_3">-</div></td>
+                       </tr>
+                   </table>
+               </td>
             </tr>
         </table>
         </div>

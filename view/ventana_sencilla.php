@@ -33,6 +33,9 @@
                             <li>
                                 <a href="ventana_cuatro_hojas.php">Ventana cuatro hojas</a>
                             </li>
+                            <li>
+                                <a href="pta_toda_vidrio.php">Puerta de Vidrio</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -52,7 +55,7 @@
                         <td>
                             <table class="table">
                                 <tr>
-                                    <th colspan="2"><center>Linea 1 1/2"</center></th>
+                                    <th colspan="2" class="encabezados_tablas"><center>Linea 1 1/2"</center></th>
                                 </tr>
                                 <tr>
                                     <td>Jamba</td>
@@ -133,7 +136,7 @@
                         <td>
                             <table class="table">
                                 <tr>
-                                    <th colspan="2"><center>Linea 2"</center></th>
+                                    <th colspan="2" class="encabezados_tablas"><center>Linea 2"</center></th>
                                 </tr>
                                 <tr>
                                     <td>Jamba</td>
@@ -214,7 +217,7 @@
                         <td>
                             <table class="table">
                                 <tr>
-                                    <th colspan="2"><center>Linea 3"</center></th>
+                                    <th colspan="2" class="encabezados_tablas"><center>Linea 3"</center></th>
                                 </tr>
                                 <tr>
                                     <td>Jamba</td>
