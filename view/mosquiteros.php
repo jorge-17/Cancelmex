@@ -39,6 +39,9 @@
                             </li>
                         </ul>
                     </li>
+                            <li>
+                                <a href="ingresar_materiales.php">Registrar materiales</a>
+                            </li>
                 </ul>
             </div>
         </nav>

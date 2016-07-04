@@ -97,17 +97,17 @@ function fijos(){
     alto=document.getElementById("alto_F").value;
 
     /*-----LINEA 2"-----*/
-    p_bolsas_2=36;
-    p_bolsal_2=36;
-    p_jun_2=38;
-    p_escalonado_2=35;
-    p_vinil=10;
-    p_silicon=40;
-    p_acrilastic=30;
-    p_vidrio=177;
-    p_claro=180;
-    p_tintex=80;
-    p_filtrasol=60;
+    p_bolsas_2=57;
+    p_bolsal_2=57;
+    p_jun_2=23;
+    p_escalonado_2=58;
+    p_vinil=6;
+    p_silicon=42;
+    p_acrilastic=33;
+    p_vidrio=182;
+    p_claro=0;
+    p_tintex=0;
+    p_filtrasol=0;
 
     bs_costo=(ancho*p_bolsas_2);
     document.getElementById("bs_2").innerHTML=bs_costo.toFixed(2);
@@ -115,13 +115,13 @@ function fijos(){
     bl_costo=((p_bolsal_2*2)*alto);
     document.getElementById("bl_2").innerHTML=bl_costo.toFixed(2);
 
-    junquillo_costo=(p_jun_2*2)*ancho;
+    junquillo_costo=(p_jun_2*ancho);
     document.getElementById("jun_2").innerHTML=junquillo_costo.toFixed(2);
 
     escalonado_costo=(ancho*p_escalonado_2);
     document.getElementById("esc_2").innerHTML=escalonado_costo.toFixed(2);
 
-    vinil_costo=(ancho*2)*(alto*2)*p_vinil;
+    vinil_costo=((ancho*2)+(alto*2))*p_vinil;
     document.getElementById("vin_2").innerHTML=vinil_costo.toFixed(2);
 
     document.getElementById("sil_2").innerHTML=p_silicon.toFixed(2);
