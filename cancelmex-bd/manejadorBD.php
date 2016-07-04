@@ -11,7 +11,7 @@ switch($action){
             echo "<script>window.location='../view/ingresar_modulos.php'</script>";
         break;
     case "insert_material":
-        mysqli_query($con,"INSERT INTO `materials`(`nombre`, `length`, `price`) VALUES ('{$_POST["nombre_material"]}','{$_POST["largo_material"]}','{$_POST["precio_material"]}')");
+        mysqli_query($con,"INSERT INTO `materials`(`nombre`,`price`) VALUES ('{$_POST["nombre_material"]}','{$_POST["precio_material"]}')");
         echo "<script>window.location='../view/ingresar_materiales.php'</script>";
         break;
 }

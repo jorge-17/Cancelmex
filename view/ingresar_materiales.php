@@ -9,7 +9,6 @@
            <table class="table">
                <tr>
                    <td><input type="text" name="nombre_material" class="form-control" placeholder="NAME"></td>
-                   <td><input type="text" name="largo_material" class="form-control" placeholder="LENGTH"></td>
                    <td><input type="text" name="precio_material" class="form-control" placeholder="PRICE"></td>
                </tr>
                <tr>
