@@ -220,11 +220,21 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     <td><div id="vinil_l2"><?php echo round($costo_vinil_l2,2); ?></div></td>
                                 </tr>
                                 <tr>
+                                    <td>Tornillos</td>
+                                    <?php
+                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='tornillo'");
+                                    $c=$result->fetch_assoc();
+                                    $d=$c['precio'];
+                                    $costo_tornillo_l2=12*$d;
+                                    ?>
+                                    <td><div id="tornillos_2"><?php echo round($costo_tornillo_l2,2); ?></div></td>
+                                </tr>
+                                <tr>
                                     <td>Suma total</td>
                                     <?php
                                     $suma_total_l2=$costo_bolsal_l2+$costo_bolsas_l2+$costo_riel_l2+$costo_chapa_l2+$costo_traslape_l2+
                                         $costo_zpuerta_l2+$costo_zcabezal_l2+$costo_oxxo_l2+$costo_silicon_l2+$costo_acrilastic_l2+
-                                        $costo_vidrio_l2+$costo_vinil_l2;
+                                        $costo_vidrio_l2+$costo_vinil_l2+$costo_tornillo_l2;
                                     ?>
                                     <td><div id="suma_total_l2"><?php echo round($suma_total_l2,2); ?></div></td>
                                 </tr>
@@ -234,6 +244,17 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     $costo_total_l2=($suma_total_l2*$utilidad)+$suma_total_l2;
                                     ?>
                                     <td><div id="costo_total_l2"><?php echo round($costo_total_l2,2); ?></div></td>
+                                </tr>
+                                <tr>
+                                    <td>Costo Total*</td>
+                                    <?php
+                                    $suma_total2_l2=$costo_bolsal_l2+$costo_bolsas_l2+$costo_riel_l2+$costo_chapa_l2+$costo_traslape_l2+
+                                        $costo_zpuerta_l2+$costo_zcabezal_l2+$costo_oxxo_l2+$costo_oxxo_l2+$costo_silicon_l2+$costo_acrilastic_l2+
+                                        $costo_vidrio_l2+$costo_vinil_l2+$costo_tornillo_l2;
+
+                                    $costo_total2_l2=($suma_total2_l2*$utilidad)+$suma_total2_l2;
+                                    ?>
+                                    <td><div id="costo_total2_l2"><?php echo round($costo_total2_l2,2); ?></div></td>
                                 </tr>
                                 <tr>
                                     <td>Claro</td>
@@ -250,6 +271,9 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                 <tr>
                                     <td>Esmerilado</td>
                                     <td><div class="precios" id="esmerilado_l2">-</div></td>
+                                </tr>
+                                <tr>
+                                    <th>* En caso de ser doble corrediza</th>
                                 </tr>
                             </table>
                         </td>
@@ -385,10 +409,20 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     <td><div id="vinil_l3"><?php echo round($costo_vinil_l3,2); ?></div></td>
                                 </tr>
                                 <tr>
+                                    <td>Tornillos</td>
+                                    <?php
+                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='tornillo'");
+                                    $c=$result->fetch_assoc();
+                                    $d=$c['precio'];
+                                    $costo_tornillo_l3=12*$d;
+                                    ?>
+                                    <td><div id="tornillos_3"><?php echo round($costo_tornillo_l3,2); ?></div></td>
+                                </tr>
+                                <tr>
                                     <td>Suma total</td><?php
                                     $suma_total_l3=$costo_bolsal_l3+$costo_bolsas_l3+$costo_riel_l3+$costo_chapa_l3+$costo_traslape_l3+
                                         $costo_zpuerta_l3+$costo_zcabezal_l3+$costo_oxxo_l3+$costo_silicon_l3+$costo_acrilastic_l3+
-                                        $costo_vidrio_l3+$costo_vinil_l3;
+                                        $costo_vidrio_l3+$costo_vinil_l3+$costo_tornillo_l3;
                                     ?>
                                     <td><div id="suma_total_l3"><?php echo round($suma_total_l3,2); ?></div></td>
                                 </tr>
@@ -398,6 +432,17 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     $costo_total_l3=($suma_total_l3*$utilidad)+$suma_total_l3;
                                     ?>
                                     <td><div id="costo_total_l3"><?php echo round($costo_total_l3,2); ?></div></td>
+                                </tr>
+                                <tr>
+                                    <td>Costo Total*</td>
+                                    <?php
+                                    $suma_total2_l3=$costo_bolsal_l3+$costo_bolsas_l3+$costo_riel_l3+$costo_chapa_l3+$costo_traslape_l3+
+                                        $costo_zpuerta_l3+$costo_zcabezal_l3+$costo_oxxo_l3+$costo_oxxo_l3+$costo_silicon_l3+$costo_acrilastic_l3+
+                                        $costo_vidrio_l3+$costo_vinil_l3+$costo_tornillo_l3;
+
+                                    $costo_total2_l3=($suma_total2_l3*$utilidad)+$suma_total2_l3;
+                                    ?>
+                                    <td><div id="costo_total2_l3"><?php echo round($costo_total2_l3,2); ?></div></td>
                                 </tr>
                                 <tr>
                                     <td>Claro</td>
@@ -414,6 +459,9 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                 <tr>
                                     <td>Esmerilado</td>
                                     <td><div class="precios" id="esmerilado_l3">-</div></td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">* En caso de se doble corrediza</th>
                                 </tr>
                             </table>
                         </td>
