@@ -172,7 +172,8 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     <td><div id="jalembutir_l2">-</div></td>
                                 </tr>
                                 <tr>
-                                    <td>Silicon</td><?php
+                                    <td>Silicon</td>
+                                    <?php
                                     $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='silicon'");
                                     $c=$result->fetch_assoc();
                                     $d=$c['precio'];
@@ -201,7 +202,8 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     <td><div id="vidrio_l2"><?php echo round($costo_vidrio_l2,2); ?></div></td>
                                 </tr>
                                 <tr>
-                                    <td>Vinil</td><?php
+                                    <td>Vinil</td>
+                                    <?php
                                     $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='vinil'");
                                     $c=$result->fetch_assoc();
                                     $d=$c['precio'];
