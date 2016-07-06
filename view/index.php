@@ -41,7 +41,13 @@
                         <a class="dropdown-toggle" data-toggle="dropdown">Ventanas con antepecho <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="ventana_c_antepecho.php">Ventana con antepecho</a>
+                                <a href="ventana_c_antepecho.php">Ventana sencilla</a>
+                            </li>
+                            <li>
+                                <a href="ventana_c_ante_tres_hojas.php">Ventana tres hojas</a>
+                            </li>
+                            <li>
+                                <a href="ventana_c_ante_cuatro_hojas.php">Ventana cuatro hojas</a>
                             </li>
                         </ul>
                     </li>

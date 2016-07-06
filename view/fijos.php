@@ -48,6 +48,12 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                             <li>
                                 <a href="ventana_c_antepecho.php">Ventana con antepecho</a>
                             </li>
+                            <li>
+                                <a href="ventana_c_ante_tres_hojas.php">Ventana tres hojas</a>
+                            </li>
+                            <li>
+                                <a href="ventana_c_ante_cuatro_hojas.php">Ventana cuatro hojas</a>
+                            </li>
                         </ul>
                     </li>
                     <li>
@@ -61,8 +67,8 @@ $con=mysqli_connect("localhost","root","","calcelmex");
         <table class="table">
             <tr>
                <form action="fijos.php?action=calcular1726" method="post">
-                <th><input class="form-control" type="text" name="ancho_F" placeholder="Ancho"></th>
                 <th><input class="form-control" type="text" name="alto_F" placeholder="Alto"></th>
+                <th><input class="form-control" type="text" name="ancho_F" placeholder="Ancho"></th>
                 <th><input class="form-control" name="utilidad" value=".7" placeholder="70%"></th>
                 <th><input class="form-control" type="text" name="v_dolar" placeholder="Dolar"></th>
                 <th><button type="submit" class="btn btn-primary">Calcular</button></th>

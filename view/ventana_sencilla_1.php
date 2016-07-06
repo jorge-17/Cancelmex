@@ -48,6 +48,12 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                             <li>
                                 <a href="ventana_c_antepecho.php">Ventana con antepecho</a>
                             </li>
+                            <li>
+                                <a href="ventana_c_ante_tres_hojas.php">Ventana tres hojas</a>
+                            </li>
+                            <li>
+                                <a href="ventana_c_ante_cuatro_hojas.php">Ventana cuatro hojas</a>
+                            </li>
                         </ul>
                     </li>
                     <li>

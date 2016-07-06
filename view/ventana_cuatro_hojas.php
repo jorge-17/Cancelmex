@@ -48,6 +48,12 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                             <li>
                                 <a href="ventana_c_antepecho.php">Ventana con antepecho</a>
                             </li>
+                            <li>
+                                <a href="ventana_c_ante_tres_hojas.php">Ventana tres hojas</a>
+                            </li>
+                            <li>
+                                <a href="ventana_c_ante_cuatro_hojas.php">Ventana cuatro hojas</a>
+                            </li>
                         </ul>
                     </li>
                     <li>
@@ -61,8 +67,8 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                 <table class="table">
                     <tr>
                        <form action="ventana_cuatro_hojas.php?action=calcular17JARM26PIGM" method="post">
-                        <td><input class="form-control" name="ancho_Vc4" placeholder="Ancho"></td>
                         <td><input class="form-control" name="alto_Vc4" placeholder="Alto"></td>
+                        <td><input class="form-control" name="ancho_Vc4" placeholder="Ancho"></td>
                         <th><input class="form-control" name="utilidad" value=".7" placeholder="70%"></th>
                         <th><input class="form-control" type="text" name="v_dolar" placeholder="Dolar"></th>
                         <td><button  type="submit" class="btn btn-primary">Calcular</button></td>
