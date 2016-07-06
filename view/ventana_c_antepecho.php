@@ -589,7 +589,8 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     <?php
                                     $suma_total2_l3=$costo_bolsal_l3+$costo_bolsas_l3+$costo_riel_l3+$costo_chapa_l3+$costo_traslape_l3+
                                         $costo_zpuerta_l3+$costo_zcabezal_l3+$costo_oxxo_l3+$costo_oxxo_l3+$costo_silicon_l3+$costo_acrilastic_l3+
-                                        $costo_vidrio_l3+$costo_vinil_l3+$costo_tornillo_l3;
+                                        $costo_vidrio_l3+$costo_vinil_l3+$costo_tornillo_l3+$costo_tjamba_l3+$costo_bolsa_l3+
+                                        $costo_junquillo_l3+$costo_escalonado_l3+$costo_vidrio2_l3+$costo_vinil2_l3;
 
                                     $costo_total2_l3=($suma_total2_l3*$utilidad)+$suma_total2_l3;
                                     ?>
