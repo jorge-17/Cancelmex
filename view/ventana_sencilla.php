@@ -62,13 +62,29 @@
            <div class="contenido_i">
                <table class="table">
                     <tr>
+                       <form action="ventana_sencilla.php?action=calcular123987" method="post">
                         <th><input type="text" id="alto_VS" placeholder="Alto" class="form-control"></th>
                         <th><input type="text" id="ancho_VS" placeholder="Ancho" class="form-control"></th>
-                        <th><button onclick="ventana_fija()" class="btn btn-primary">Calcular</button></th>
+                        <th><input class="form-control" name="utilidad" value=".7" placeholder="70%"></th>
+                        <th><input class="form-control" type="text" name="v_dolar" placeholder="Dolar"></th>
+                        <th><button type="submit" class="btn btn-primary">Calcular</button></th>
+                        </form>
+                        <td><!-- FXEXCHANGERATE.COM EXCHANGE RATE CONVERTER START --><div style="width:196px;border:1px solid #2D6AB4;background-color:#F0F0F0;"><div style="text-align:left;background-color:#2D6AB4;border-bottom:0px;height:18px; font-size:12px;font-weight:bold;padding-top:2px; padding-left:5px"><span  style="background-image:url(http://ww.fxexchangerate.com/flag.png); background-position: 0 -2064px; width:100%; height:15px; background-repeat:no-repeat;padding-left:2px;"><a href="http://usd.fxexchangerate.com/" target="_blank" style="color:#FFFFFF; text-decoration:none;padding-left:22px;">Dólar estadounidense</a></span></div><script type="text/javascript">var fm="USD";var ft="MXN,";var hb="2D6AB4";var hc="FFFFFF";var bb = "F0F0F0";var bo = "2D6AB4";var tz="-6s";var wh="196x80";var lg="es";</script><script type="text/javascript" src="http://www.fxexchangerate.com/converter.php"></script></div><!-- FXEXCHANGERATE.COM  EXCHANGE RATE CONVERTER END -->
+                       </td>
                     </tr>
                 </table>
                 <table class="table">
                     <tr>
+                       <?php
+                        $action=$_GET['action'];
+
+                        switch($action){
+                            case "calcular123987":
+                                $alto=$_POST["alto_VS"];
+                                $ancho=$_POST["ancho_VS"];
+                                $dolar=$_POST["v_dolar"];
+                                $utilidad=$_POST["utilidad"];
+                        ?>
                         <td>
                             <table class="table">
                                 <tr>
@@ -89,14 +105,6 @@
                                 <tr>
                                     <td>C. Chapa<div class="anotaciones">(precio)*</div></td>
                                     <td><div id="cchapa_l1-">-</div></td>
-                                </tr>
-                                <tr>
-                                    <td>C. Traslape</td>
-                                    <td><div id="ctraslape_l1-">-</div></td>
-                                </tr>
-                                <tr>
-                                    <td>Zoclo pta<div class="anotaciones">(precio)*</div></td>
-                                    <td><div id="zoclopt_l1-">-</div></td>
                                 </tr>
                                 <tr>
                                     <td>Zoclito c<div class="anotaciones">(se mul * 4)*</div></td>
@@ -148,6 +156,13 @@
                                 </tr>
                             </table>
                         </td>
+                        <?php
+                         break;
+                            default:
+                                echo "<center><h2>Ingresa las medidas para comenzar a calcular</h2></center>";
+                                break;
+                            }
+                        ?>
                     </tr>
                 </table>
            </div>
