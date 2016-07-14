@@ -67,8 +67,8 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                <table class="table">
                     <tr>
                        <form action="ventana_c_ante_tres_hojas.php?action=calcular147963" method="post">
-                        <td><input type="text" class="form-control" name="alto_V3H" placeholder="Alto"></td>
-                        <td><input type="text" class="form-control" name="ancho_V3H" placeholder="Ancho"></td>
+                        <th><input type="text" class="form-control" name="alto_V3H" placeholder="Alto"></th>
+                        <th><input type="text" class="form-control" name="ancho_V3H" placeholder="Ancho"></th>
                         <th><input type="text" class="form-control" name="alto_a_V3H" placeholder="Alto antepecho"></th>
                         <th><input class="form-control" name="utilidad" value=".7" placeholder="70%"></th>
                         <th><input class="form-control" type="text" name="v_dolar" placeholder="Dolar"></th>
@@ -94,7 +94,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                         <td>
                             <table class="table">
                                 <tr>
-                                    <th colspan="2"><center>Linea 2"</center></th>
+                                    <th colspan="2" class="encabezados_tablas"><center>Linea 2"</center></th>
                                 </tr>
                                 <tr>
                                     <td>Jamba Lat.</td>
@@ -386,7 +386,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                         <td>
                             <table class="table">
                                 <tr>
-                                    <th colspan="2"><center>Linea 3"</center></th>
+                                    <th colspan="2" class="encabezados_tablas"><center>Linea 3"</center></th>
                                 </tr>
                                 <tr>
                                     <td>Jamba Lat.</td>

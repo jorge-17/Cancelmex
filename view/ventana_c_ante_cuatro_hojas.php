@@ -67,8 +67,8 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                 <table class="table">
                     <tr>
                        <form action="ventana_c_ante_cuatro_hojas.php?action=calcular17JARM26PIGM" method="post">
-                        <td><input class="form-control" name="alto_Vc4" placeholder="Alto"></td>
-                        <td><input class="form-control" name="ancho_Vc4" placeholder="Ancho"></td>
+                        <th><input class="form-control" name="alto_Vc4" placeholder="Alto"></th>
+                        <th><input class="form-control" name="ancho_Vc4" placeholder="Ancho"></th>
                         <th><input type="text" class="form-control" name="alto_a_Vc4" placeholder="Alto antepecho"></th>
                         <th><input class="form-control" name="utilidad" value=".7" placeholder="70%"></th>
                         <th><input class="form-control" type="text" name="v_dolar" placeholder="Dolar"></th>
