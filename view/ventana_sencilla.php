@@ -103,7 +103,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     $m=($d/6.00)*$dolar;
                                     $costo_bolsal_l1=$alto*$m*2;
                                     ?>
-                                    <td><div id="jamba_l1-"><?php echo round($costo_bolsal_l1,2); echo $alto; ?></div></td>
+                                    <td><div id="jamba_l1-"><?php echo round($costo_bolsal_l1,2); ?></div></td>
                                 </tr>
                                 <tr>
                                     <td>Jamba Sup.</td>
