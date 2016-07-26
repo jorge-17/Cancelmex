@@ -1,6 +1,11 @@
-<html>
+<?php
+error_reporting(E_ALL ^ E_NOTICE);
+$con=mysqli_connect("localhost","root","","calcelmex");
+?>
+   <html>
     <head>
         <title>Ingresar materiales</title>
+        <link rel="stylesheet" type="text/css" href="../style/estilos.css">
         <link rel="stylesheet" type="text/css" href="../style/bootstrap-3.3.6-dist/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="../style/bootstrap-3.3.6-dist/css/bootstrap.css">
     </head>
@@ -33,9 +38,6 @@
                             <li>
                                 <a href="ventana_cuatro_hojas.php">Ventana cuatro hojas 2" y 3"</a>
                             </li>
-                            <li>
-                                <a href="pta_toda_vidrio.php">Puerta de Vidrio</a>
-                            </li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -52,12 +54,28 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Puertas <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="puerta_dos_pulgadas.php">Puerta de 2"</a>
+                            </li>
+                            <li>
+                                <a href="pta_toda_vidrio.php">Puerta de 3"</a>
+                            </li>
+                            <li>
+                                <a href="puerta_tres_cuartos.php">Puerta de 1 3/4"</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li>
                         <a href="ingresar_materiales.php">Registrar materiales</a>
                     </li>
                 </ul>
             </div>
         </nav>
+        <div class="contenido_e" align="center">
+        <div class="contenido_i">
        <form action="../cancelmex-bd/manejadorBD.php?action=insert_material" method="post">
            <table class="table">
                <tr>
@@ -68,7 +86,34 @@
                    <td colspan="5"><center><button type="submit" class="btn btn-primary">Ingresar</button></center></td>
                </tr>
            </table>
-       </form>
+           </form>
+           <table class="table" id="tabla_registro_materiales">
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th></th>
+                <th></th>
+            </tr>
+             <?php
+               $result = mysqli_query($con,"SELECT * FROM `materials` ORDER BY `nombre` ASC");
+                 while($row = mysqli_fetch_array($result)) {
+               ?>
+              <tr>
+                  <td><?php  echo $row['nombre']; ?></td>
+                  <td><?php echo $row['price']; ?></td>
+                  <form action="../cancelmex-bd/manejadorBD.php?action=update_price26171726" method="post">
+                  <input type="hidden" value="<?php  echo $row['nombre']; ?>" name="nombre">
+                  <td><input type="text" placeholder="$" name="nuevo_precio" class="form-control"></td>
+                  <td><button type="submit" class="btn btn-warning">Modificar</button></td>
+                  </form>
+              </tr>
+              <?php
+                     }
+                     ?>
+
+           </table>
+        </div>
+        </div>
     </body>
     <script type="text/javascript" src="../behavior/comportamiento_js.js"></script>
     <script type="text/javascript" src="../behavior/jquery.min.js"></script>

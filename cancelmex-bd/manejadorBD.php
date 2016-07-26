@@ -14,5 +14,12 @@ switch($action){
         mysqli_query($con,"INSERT INTO `materials`(`nombre`,`price`) VALUES ('{$_POST["nombre_material"]}','{$_POST["precio_material"]}')");
         echo "<script>window.location='../view/ingresar_materiales.php'</script>";
         break;
+    case "update_price26171726":
+        mysqli_query($con,"UPDATE `materials` SET `price`={$_POST["nuevo_precio"]} WHERE nombre='{$_POST["nombre"]}'");
+        ?>
+        <script>alert("Precio modificado")</script>
+        <script>window.location='../view/ingresar_materiales.php'</script>
+        <?php
+        break;
 }
 ?>

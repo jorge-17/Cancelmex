@@ -37,9 +37,6 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                             <li>
                                 <a href="ventana_cuatro_hojas.php">Ventana cuatro hojas 2" y 3"</a>
                             </li>
-                            <li>
-                                <a href="pta_toda_vidrio.php">Puerta de Vidrio</a>
-                            </li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -53,6 +50,20 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                             </li>
                             <li>
                                 <a href="ventana_c_ante_cuatro_hojas.php">Ventana cuatro hojas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Puertas <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="puerta_dos_pulgadas.php">Puerta de 2"</a>
+                            </li>
+                            <li>
+                                <a href="pta_toda_vidrio.php">Puerta de 3"</a>
+                            </li>
+                            <li>
+                                <a href="puerta_tres_cuartos.php">Puerta de 1 3/4"</a>
                             </li>
                         </ul>
                     </li>
@@ -187,7 +198,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     $c=$result->fetch_assoc();
                                     $d=$c['precio'];
                                     $m=($d/6.00)*$dolar;
-                                    $costo_bolsa_l2=$alto_a*$m*2;
+                                    $costo_bolsa_l2=($alto_a*2)*$m;
                                     ?>
                                     <td><div id="tapa_jamba_l2"><?php echo round($costo_bolsa_l2,2); ?></div></td>
                                 </tr>
@@ -237,7 +248,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='silicon'");
                                     $c=$result->fetch_assoc();
                                     $d=$c['precio'];
-                                    $costo_silicon_l2=$d;
+                                    $costo_silicon_l2=(($alto*2)+($ancho*2))*$d;
                                     ?>
                                     <td><div id="silicon_l2"><?php echo round($costo_silicon_l2,2); ?></div></td>
                                 </tr>
@@ -246,7 +257,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='acrilastic'");
                                     $c=$result->fetch_assoc();
                                     $d=$c['precio'];
-                                    $costo_acrilastic_l2=$d;
+                                    $costo_acrilastic_l2=(($alto*2)+($ancho*2))*$d;
                                     ?>
                                     <td><div id="acrilastica_l2"><?php echo round($costo_acrilastic_l2,2); ?></div></td>
                                 </tr>
@@ -266,8 +277,6 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='vinil'");
                                     $c=$result->fetch_assoc();
                                     $d=$c['precio'];
-                                    $a=$ancho/4;
-                                    $b=$a*2;
                                     $costo_vinil2_l2=(($ancho*2)+($alto_a*2))*$d;
                                     ?>
                                     <td><div id="vinil_l2"><?php echo round($costo_vinil2_l2,2); ?></div></td>
@@ -523,7 +532,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='silicon'");
                                     $c=$result->fetch_assoc();
                                     $d=$c['precio'];
-                                    $costo_silicon_l3=$d;
+                                    $costo_silicon_l3=(($alto*2)+($ancho*2))*$d;
                                     ?>
                                     <td><div id="silicon_l3"><?php echo round($costo_silicon_l3,2); ?></div></td>
                                 </tr>
@@ -532,7 +541,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='acrilastic'");
                                     $c=$result->fetch_assoc();
                                     $d=$c['precio'];
-                                    $costo_acrilastic_l3=$d;
+                                    $costo_acrilastic_l3=(($alto*2)+($ancho*2))*$d;
                                     ?>
                                     <td><div id="acrilastica_l3"><?php echo round($costo_acrilastic_l3,2); ?></div></td>
                                 </tr>

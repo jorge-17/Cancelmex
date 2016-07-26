@@ -4,7 +4,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
 ?>
    <html>
     <head>
-        <title>Puerta de 3"</title>
+        <title>Puerta de 2"</title>
         <link rel="stylesheet" type="text/css" href="../style/estilos.css">
         <link rel="stylesheet" type="text/css" href="../style/bootstrap-3.3.6-dist/css/bootstrap.css">
     </head>
@@ -76,7 +76,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
         <div class="contenido_e" align="center">
             <div class="contenido_i">
                 <table class="table">
-                    <tr><form action="pta_toda_vidrio.php?action=pta_3_pulgadas123987" method="post">
+                    <tr><form action="puerta_dos_pulgadas.php?action=pta_2_pulgadas123987" method="post">
                        <th><input class="form-control" name="alto_pta_v" placeholder="Alto"></th>
                         <th><input class="form-control" name="ancho_pta_v" placeholder="Ancho"></th>
                         <th><input class="form-control" name="utilidad" value=".7" placeholder="70%"></th>
@@ -92,7 +92,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                         $action=$_GET["action"];
 
                         switch($action){
-                            case "pta_3_pulgadas123987":
+                            case "pta_2_pulgadas123987":
                                 $alto=$_POST['alto_pta_v'];
                                 $ancho=$_POST['ancho_pta_v'];
                                 $dolar=$_POST["v_dolar"];
@@ -101,48 +101,24 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                         <td>
                             <table class="table">
                                 <tr>
-                                    <th colspan="2" class="encabezados_tablas"><center>Linea 3"</center></th>
+                                    <th colspan="2" class="encabezados_tablas"><center>Linea 2"</center></th>
                                 </tr>
                                 <tr>
-                                    <td>Canal Liso lateral</td>
+                                    <td>Batiente doble vena lateral</td>
                                     <?php
-                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='bolsa lisa 3\"'");
+                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='batiente_d_vena'");
                                     $c=$result->fetch_assoc();
-                                    $d=$c['precio'];
-                                    $m=($d/6.00)*$dolar;
-                                    $costo_bolsal_l3=($alto*2)*$m;
+                                    $m=$c['precio'];
+                                    $costo_batientel_l2=($alto*2)*$m;
                                     ?>
-                                    <td><div id="canall_l3"><?php echo round($costo_bolsal_l3,2); ?></div></td>
+                                    <td><div id="batiente_l3"><?php echo round($costo_batientel_l2,2); ?></div></td>
                                 </tr>
                                 <tr>
-                                    <td>Canal Liso Superior</td>
+                                    <td>Batiente doble vena superior</td>
                                     <?php
-                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='bolsa lisa 3\"'");
+                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='batiente_d_vena'");
                                     $c=$result->fetch_assoc();
-                                    $d=$c['precio'];
-                                    $m=($d/6.00)*$dolar;
-                                    $costo_bolsas_l3=$ancho*$m;
-                                    ?>
-                                    <td><div id="canals_l3"><?php echo round($costo_bolsas_l3,2); ?></div></td>
-                                </tr>
-                                <tr>
-                                    <td>Batiente 3/4 lateral</td>
-                                    <?php
-                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='batiente 3/4'");
-                                    $c=$result->fetch_assoc();
-                                    $d=$c['precio'];
-                                    $m=($d/6.00)*$dolar;
-                                    $costo_batientel_l3=($alto*2)*$m;
-                                    ?>
-                                    <td><div id="batiente_l3"><?php echo round($costo_batientel_l3,2); ?></div></td>
-                                </tr>
-                                <tr>
-                                    <td>Batiente 3/4 superior</td>
-                                    <?php
-                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='batiente 3/4'");
-                                    $c=$result->fetch_assoc();
-                                    $d=$c['precio'];
-                                    $m=($d/6.00)*$dolar;
+                                    $m=$c['precio'];
                                     $costo_batientes_l3=$ancho*$m;
                                     ?>
                                     <td><div><?php echo round($costo_batientes_l3,2); ?></div></td>
@@ -150,7 +126,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                 <tr>
                                     <td>C. Chapa</td>
                                     <?php
-                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='c. chapa 3\"'");
+                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='c. chapa 2\"'");
                                     $c=$result->fetch_assoc();
                                     $d=$c['precio'];
                                     $m=($d/6.00)*$dolar;
@@ -161,7 +137,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                 <tr>
                                     <td>Zoclo pta</td>
                                     <?php
-                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='z. puerta 3\"'");
+                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='z. puerta 2\"'");
                                     $c=$result->fetch_assoc();
                                     $m=$c['precio'];
                                     $costo_zpuerta_l3=$ancho*$m;
@@ -169,15 +145,15 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     <td><div id="zocolopta_l3"><?php echo round($costo_zpuerta_l3,2); ?></div></td>
                                 </tr>
                                 <tr>
-                                    <td>Zoclo ventana</td>
+                                    <td>Zoclo cabezal</td>
                                      <?php
-                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='z. ventana 3\"'");
+                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='z. cabezal 2\"'");
                                     $c=$result->fetch_assoc();
                                     $d=$c['precio'];
                                     $m=($d/6.00)*$dolar;
-                                    $costo_zventana_l3=$ancho*$m;
+                                    $costo_zcabezal_l3=$ancho*$m;
                                     ?>
-                                    <td><div id="ventana_l3"><?php echo round($costo_zventana_l3,2); ?></div></td>
+                                    <td><div id="ventana_l3"><?php echo round($costo_zcabezal_l3,2); ?></div></td>
                                 </tr>
                                 <tr>
                                     <td>Duela</td>
@@ -191,22 +167,22 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                         $a=ceil($c);
                                         $t=$a*$alto_d;
                                         $p_duela=$m/6;
-                                        $costo_duela_l3=$t*$p_duela;
+                                        $costo_duela_l2=$t*$p_duela;
                                     }elseif($alto>2.1 && $alto<=2.3){
                                         $alto_d=1.1;
                                         $c=$ancho/.125;
                                         $a=ceil($c);
                                         $t=$a*$alto_d;
                                         $p_duela=$m/6;
-                                        $costo_duela_l3=$t*$p_duela;
+                                        $costo_duela_l2=$t*$p_duela;
                                     }
                                     ?>
-                                    <td><div><?php echo round($costo_duela_l3,2); ?></div></td>
+                                    <td><div><?php echo round($costo_duela_l2,2); ?></div></td>
                                 </tr>
                                 <tr>
                                     <td>Intermedio</td>
                                     <?php
-                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='intermedio 3\"'");
+                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='intermedio 2\"'");
                                     $c=$result->fetch_assoc();
                                     $m=$c['precio'];
                                     $costo_intermedio_l3=$ancho*$m;
@@ -214,24 +190,24 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     <td><div><?php echo round($costo_intermedio_l3,2); ?></div></td>
                                 </tr>
                                 <tr>
-                                    <td>Pivote descentrado</td>
+                                    <td>Bisagras de libro</td>
                                      <?php
-                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='pivote_descentrado 3\"'");
+                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='bisagra_libro'");
                                     $c=$result->fetch_assoc();
                                     $m=$c['precio'];
-                                    $costo_pivotedes_l3=$m;
+                                    $costo_bisagras_l3=$m*3;
                                     ?>
-                                    <td><div class="pivoted_l3"><?php echo round($costo_pivotedes_l3,2); ?></div></td>
+                                    <td><div class="pivoted_l3"><?php echo round($costo_bisagras_l3,2); ?></div></td>
                                 </tr>
                                 <tr>
-                                    <td>Chapa doble manija</td>
+                                    <td>Trompas de elefante</td>
                                     <?php
-                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='chapa_d_manija'");
+                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='trompa_elefante'");
                                     $c=$result->fetch_assoc();
                                     $m=$c['precio'];
-                                    $costo_manija_l3=$m;
+                                    $costo_trompas_l3=$m*2;
                                     ?>
-                                    <td><div id="chapadm_l3"><?php echo round($costo_manija_l3,2); ?></div></td>
+                                    <td><div id="chapadm_l3"><?php echo round($costo_trompas_l3,2); ?></div></td>
                                 </tr>
                                 <tr>
                                     <td>Acrilastic</td>
@@ -265,20 +241,22 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                 <tr>
                                     <td>Suma Total</td>
                                     <?php
-                                    $suma_total_l3=$costo_bolsal_l3+$costo_bolsas_l3+$costo_batientel_l3+$costo_batientes_l3+
-                                        $costo_cchapa_l3+$costo_zpuerta_l3+$costo_zventana_l3+$costo_pivotedes_l3+$costo_manija_l3+
-                                        $costo_acrilastic_l3+$costo_tornillos_l3+$costo_vinil_l3;
+                                    $suma_total_l3=$costo_batientel_l2+$costo_batientes_l3+$costo_cchapa_l3+$costo_zpuerta_l3+
+                                        $costo_zcabezal_l3+$costo_bisagras_l3+$costo_trompas_l3+$costo_acrilastic_l3+$costo_tornillos_l3+
+                                        $costo_vinil_l3;
 
-                                    $suma_total_l3_z=$costo_bolsal_l3+$costo_bolsas_l3+$costo_batientel_l3+$costo_batientes_l3+
-                                        $costo_cchapa_l3+$costo_zpuerta_l3+$costo_zventana_l3+$costo_pivotedes_l3+$costo_manija_l3+
-                                        $costo_acrilastic_l3+$costo_tornillos_l3+$costo_vinil_l3+$costo_duela_l3+$costo_intermedio_l3;
+                                    $suma_total_l3_z=$costo_batientel_l2+$costo_batientes_l3+$costo_cchapa_l3+$costo_zpuerta_l3+
+                                        $costo_zcabezal_l3+$costo_bisagras_l3+$costo_trompas_l3+$costo_acrilastic_l3+$costo_tornillos_l3+
+                                        $costo_vinil_l3+$costo_duela_l2+$costo_intermedio_l3;
                                     ?>
-                                    <td><table class="mini_tablas">
+                                    <td>
+                                        <table class="mini_tablas">
                                             <tr>
                                                 <td><div id="suma_total_l3"><?php echo round($suma_total_l3,2); ?></div></td>
                                                 <td><div><?php echo round($suma_total_l3_z,2); ?>*</div></td>
                                             </tr>
-                                        </table></td>
+                                        </table>
+                                    </td>
                                 </tr>
                                 <tr><td rowspan="2">Claro</td>
                                     <?php
@@ -303,12 +281,14 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                         </table>
                                     </td>
                                 </tr>
-                                <tr><td><table class="mini_tablas">
+                                <tr><td>
+                                    <table class="mini_tablas">
                                         <tr>
                                             <td><div class="precios"><?php echo round($costo_claro_l3,2); ?></div></td>
                                             <td><div class="precios"><?php echo round($costo_claro_l3_z,2); ?>*</div></td>
                                         </tr>
-                                    </table></td></tr>
+                                    </table>
+                                </td></tr>
                                 <tr>
                                     <td rowspan="2">Chino</td>
                                     <?php
@@ -328,81 +308,19 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                         <table class="mini_tablas">
                                             <tr>
                                                 <td><div><?php echo $costo_chino_l3_q; ?></div></td>
-                                                <td><div><?php echo $costo_chino_c_duela; ?></div></td>
+                                                <td><div><?php echo $costo_chino_c_duela; ?>*</div></td>
                                             </tr>
                                         </table>
                                     </td>
                                 </tr>
-                                    <tr><td><table class="mini_tablas">
+                                    <tr><td>
+                                       <table class="mini_tablas">
                                         <tr>
                                             <td><div class="precios"><?php echo round($costo_chino_l3,2); ?></div></td>
-                                            <td><div class="precios"><?php echo round($costo_chino_l3_z,2); ?></div></td>
+                                            <td><div class="precios"><?php echo round($costo_chino_l3_z,2); ?>*</div></td>
                                         </tr>
-                                    </table></td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">Filtrasol</td>
-                                    <?php
-                                $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='filtrasol'");
-                                    $c=$result->fetch_assoc();
-                                    $d=$c['precio'];
-                                    $costo_filtrasol_l3_q=($ancho*$alto)*$d;
-                                    $costo_filtrasol_c_duela=(($alto/2)*$ancho)*$d;
-
-                                    $s=$suma_total_l3+$costo_filtrasol_l3_q;
-                                    $costo_filtrasol_l3=($s*$utilidad)+$s;
-
-                                    $s_2=$suma_total_l3_z+$costo_filtrasol_c_duela;
-                                    $costo_filtrasol_l3_z=($s_2*$utilidad)+$s_2;
-                                    ?>
-                                    <td>
-                                        <table class="mini_tablas">
-                                            <tr>
-                                                <td><div><?php echo $costo_filtrasol_l3_q; ?></div></td>
-                                                <td><div><?php echo $costo_filtrasol_c_duela; ?></div></td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                                   <tr>
-                                    <td><table class="mini_tablas">
-                                        <tr>
-                                            <td><div class="precios"><?php echo round($costo_filtrasol_l3,2); ?></div></td>
-                                            <td><div class="precios"><?php echo round($costo_filtrasol_l3_z,2); ?></div></td>
-                                        </tr>
-                                    </table></td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">Tintex</td>
-                                    <?php
-                                $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='tintex'");
-                                    $c=$result->fetch_assoc();
-                                    $d=$c['precio'];
-                                    $costo_tintex_l3_q=($ancho*$alto)*$d;
-                                    $costo_tintex_c_duela=(($alto/2)*$ancho)*$d;
-
-                                    $s=$suma_total_l3+$costo_tintex_l3_q;
-                                    $costo_tintex_l3=($s*$utilidad)+$s;
-
-                                    $s_2=$suma_total_l3_z+$costo_tintex_c_duela;
-                                    $costo_tintex_l3_z=($s_2*$utilidad)+$s_2;
-                                    ?>
-                                    <td>
-                                        <table class="mini_tablas">
-                                            <tr>
-                                                <td><div><?php echo $costo_tintex_l3_q; ?></div></td>
-                                                <td><div><?php echo $costo_tintex_c_duela; ?>*</div></td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                                   <tr>
-                                    <td><table class="mini_tablas">
-                                        <tr>
-                                            <td><div class="precios"><?php echo round($costo_tintex_l3,2); ?></div></td>
-                                            <td><div class="precios"><?php echo round($costo_tintex_l3_z,2); ?></div></td>
-                                        </tr>
-                                    </table></td>
+                                    </table>
+                                        </td>
                                 </tr>
                                 <tr>
                                     <td rowspan="2">Satinado</td>
@@ -423,7 +341,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                         <table class="mini_tablas">
                                             <tr>
                                                 <td><div><?php echo $costo_satinado_l3_q; ?></div></td>
-                                                <td><div><?php echo $costo_satinado_c_duela; ?></div></td>
+                                                <td><div><?php echo $costo_satinado_c_duela; ?>*</div></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -432,30 +350,30 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     <td><table class="mini_tablas">
                                         <tr>
                                             <td><div class="precios"><?php echo round($costo_satinado_l3,2); ?></div></td>
-                                            <td><div class="precios"><?php echo round($costo_satinado_l3_z,2); ?></div></td>
+                                            <td><div class="precios"><?php echo round($costo_satinado_l3_z,2); ?>*</div></td>
                                         </tr>
                                     </table></td>
                                 </tr>
                                 <tr>
-                                    <td rowspan="2">Reflecta</td>
+                                    <td rowspan="2">Plastico</td>
                                     <?php
-                                $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='reflecta'");
+                                $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='plastico'");
                                     $c=$result->fetch_assoc();
                                     $d=$c['precio'];
-                                    $costo_reflecta_l3_q=($ancho*$alto)*$d;
-                                    $costo_refelcta_c_duela=(($alto/2)*$ancho)*$d;
+                                    $costo_plastico_l3_q=($ancho*$alto)*$d;
+                                    $costo_plastico_c_duela=(($alto/2)*$ancho)*$d;
 
-                                    $s=$suma_total_l3+$costo_reflecta_l3_q;
-                                    $costo_reflecta_l3=($s*$utilidad)+$s;
+                                    $s=$suma_total_l3+$costo_plastico_l3_q;
+                                    $costo_plastico_l3=($s*$utilidad)+$s;
 
-                                    $s_2=$suma_total_l3_z+$costo_refelcta_c_duela;
-                                    $costo_reflecta_l3_z=($s_2*$utilidad)+$s_2;
+                                    $s_2=$suma_total_l3_z+$costo_plastico_c_duela;
+                                    $costo_plastico_l3_z=($s_2*$utilidad)+$s_2;
                                     ?>
                                     <td>
                                         <table class="mini_tablas">
                                             <tr>
-                                                <td><div><?php echo  $costo_reflecta_l3_q; ?></div></td>
-                                                <td><div><?php echo $costo_refelcta_c_duela; ?></div></td>
+                                                <td><div><?php echo $costo_plastico_l3_q; ?></div></td>
+                                                <td><div><?php echo $costo_plastico_c_duela; ?>*</div></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -463,8 +381,40 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                    <tr>
                                     <td><table class="mini_tablas">
                                         <tr>
-                                            <td><div class="precios"><?php echo round($costo_reflecta_l3,2); ?></div></td>
-                                            <td><div class="precios"><?php echo round($costo_reflecta_l3_z,2); ?></div></td>
+                                            <td><div class="precios"><?php echo round($costo_plastico_l3,2); ?></div></td>
+                                            <td><div class="precios"><?php echo round($costo_plastico_l3_z,2); ?>*</div></td>
+                                        </tr>
+                                    </table></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">Acrilico</td>
+                                    <?php
+                                $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='acrilico'");
+                                    $c=$result->fetch_assoc();
+                                    $d=$c['precio'];
+                                    $costo_acrilico_l3_q=($ancho*$alto)*$d;
+                                    $costo_acrilico_c_duela=(($alto/2)*$ancho)*$d;
+
+                                    $s=$suma_total_l3+$costo_acrilico_l3_q;
+                                    $costo_acrilico_l3=($s*$utilidad)+$s;
+
+                                    $s_2=$suma_total_l3_z+$costo_acrilico_c_duela;
+                                    $costo_acrilico_l3_z=($s_2*$utilidad)+$s_2;
+                                    ?>
+                                    <td>
+                                        <table class="mini_tablas">
+                                            <tr>
+                                                <td><div><?php echo $costo_acrilico_l3_q; ?></div></td>
+                                                <td><div><?php echo $costo_acrilico_c_duela; ?>*</div></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                   <tr>
+                                    <td><table class="mini_tablas">
+                                        <tr>
+                                            <td><div class="precios"><?php echo round($costo_acrilico_l3,2); ?></div></td>
+                                            <td><div class="precios"><?php echo round($costo_acrilico_l3_z,2); ?>*</div></td>
                                         </tr>
                                     </table></td>
                                 </tr>

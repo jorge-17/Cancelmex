@@ -3,10 +3,9 @@
 }
 
 .precios{
-	background-color: #F6CECE;
-	border: 1;
-	border-style: solid;
-	border-color: #FF0000;
+	background-color: #F78181;
+
+    border-radius: 4px;
 }
 .contenido_i{
     width: 979px;
@@ -20,7 +19,11 @@
 }
 .encabezados_tablas{
     background-color: #A9BCF5;
+    border-radius: 4px;
 }
 #asd1213{
+    width: 100%;
+}
+.mini_tablas{
     width: 100%;
 }
