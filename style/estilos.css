@@ -27,3 +27,6 @@
 .mini_tablas{
     width: 100%;
 }
+#btn-detalles{
+    float: left;
+}

@@ -447,3 +447,12 @@ function ventana_4_hojas(){
     p_vinil=7;
 
 }
+
+function mostrarDisplay(id_1,id_2){
+    for(i=1;i<=9;i++){
+        document.getElementById(id_1).rows[i].style.display='';
+    }
+    for(a=1;a<=9;a++){
+        document.getElementById(id_2).rows[a].style.display='';
+    }
+}
