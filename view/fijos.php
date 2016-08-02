@@ -102,8 +102,8 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                 ?>
                <td>
                    <table class="table" id="tabla_oculta_l2">
-                       <tr id="fila_mostrada" onclick="cambiarDisplay_fijos('tabla_oculta_l2')">
-                           <th colspan="3" class="encabezados_tablas"><center>Linea 2"</center></th>
+                       <tr id="fila_mostrada" >
+                           <th colspan="3" class="encabezados_tablas"><center><button id="boton_menu_l2" onclick="mostrarDisplay_fijos('tabla_oculta_l2','boton_menu_l2')" class="btn btn-default"><span class="glyphicon glyphicon-menu-hamburger"></span></button>Linea 2"</center></th>
                        </tr>
                        <tr id="primera_fila" style="display:none">
                            <td>Bolsa superior</td>
@@ -290,8 +290,8 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                </td>
                <td>
                    <table class="table" id="tabla_oculta_l3">
-                       <tr id="fila_mostrada" onclick="cambiarDisplay_fijos('tabla_oculta_l3')">
-                           <th class="encabezados_tablas" colspan="2"><center>Linea 3"</center></th>
+                       <tr id="fila_mostrada" >
+                           <th class="encabezados_tablas" colspan="2"><center><button id="boton_menu_l3" onclick="mostrarDisplay_fijos('tabla_oculta_l3','boton_menu_l3')" class="btn btn-default"><span class="glyphicon glyphicon-menu-hamburger"></span></button>Linea 3"</center></th>
                        </tr>
                        <tr style="display:none">
                            <td>Bolsa superior</td>

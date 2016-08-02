@@ -33,3 +33,6 @@
 body{
     background: url("imagenes/g19537.png") fixed center;
 }
+#boton_menu_l2, #boton_menu_l3, #boton_menu{
+    float: left;
+}
