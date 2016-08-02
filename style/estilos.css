@@ -3,8 +3,9 @@
 }
 
 .precios{
-	background-color: #F78181;
-
+	border: 1;
+    border-style: solid;
+    border-color: #F78181;
     border-radius: 4px;
 }
 .contenido_i{

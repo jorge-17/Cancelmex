@@ -447,3 +447,8 @@ function ventana_4_hojas(){
     p_vinil=7;
 
 }
+ function cambiarDisplay_fijos(id) {
+     for(i=1;i<10;i++){
+        fila = document.getElementById(id).rows[i].style.display='';
+    }
+}
