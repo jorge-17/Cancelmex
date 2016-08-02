@@ -9,9 +9,11 @@
 }
 .contenido_i{
     width: 979px;
+    background-color: white;
 }
 .contenid_e{
     width: 100%;
+    background-color: white;
 }
 .anotaciones{
     color: red;
@@ -26,4 +28,7 @@
 }
 .mini_tablas{
     width: 100%;
+}
+body{
+    background: url("imagenes/g19537.png") fixed center;
 }
