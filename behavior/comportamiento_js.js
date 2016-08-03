@@ -1,9 +1,15 @@
+var alto;
+var ancho;
+var x;
+var precio;
+
 function cambio_tela() {
-	alto=document.getElementById("alto_m").value;
-	ancho=document.getElementById("ancho_m").value;
-	x=document.getElementById("valor_x").value;
-	precio=alto*ancho*x;
-	document.getElementById("precio_mosquitero").innerHTML=precio.toFixed(2);
+
+	alto = document.getElementById("alto_m").value;
+	ancho = document.getElementById("ancho_m").value;
+	x = document.getElementById("valor_x").value;
+	precio = alto * ancho * x;
+	document.getElementById("precio_mosquitero").innerHTML = precio.toFixed(2);
 }
 
 function M_fijo(){
@@ -150,4 +156,104 @@ function ocultarDisplay_puerta1(id){
         fila = document.getElementById(id).rows[i].style.display='none';
     }
      document.getElementById("boton_menu").setAttribute("onclick","mostrarDisplay_puerta1('"+id+"');");
+}
+
+/*--------------------------------- Tablas dinamicas ventana con antepecho de 4 hojas ------------------------------------*/
+function mostrarDisplay_ventana_ante4(id,boton) {
+     for(i=1;i<20;i++){
+        fila = document.getElementById(id).rows[i].style.display='';
+    }
+     document.getElementById(boton).setAttribute("onclick","ocultarDisplay_puerta_ante4('"+id+"','"+boton+"');");
+}
+
+function ocultarDisplay_ventana_ante4(id,boton){
+    for(i=1;i<20;i++){
+        fila = document.getElementById(id).rows[i].style.display='none';
+    }
+     document.getElementById(boton).setAttribute("onclick","mostrarDisplay_puerta_ante4('"+id+"','"+boton+"');");
+}
+/*--------------------------------- Tablas dinamicas ventana con antepecho de 3 hojas ------------------------------------*/
+function mostrarDisplay_ventana_ante3(id,boton) {
+     for(i=1;i<20;i++){
+        fila = document.getElementById(id).rows[i].style.display='';
+    }
+     document.getElementById(boton).setAttribute("onclick","ocultarDisplay_ventana_ante3('"+id+"','"+boton+"');");
+}
+
+function ocultarDisplay_ventana_ante3(id,boton){
+    for(i=1;i<20;i++){
+        fila = document.getElementById(id).rows[i].style.display='none';
+    }
+     document.getElementById(boton).setAttribute("onclick","mostrarDisplay_ventana_ante3('"+id+"','"+boton+"');");
+}
+/*--------------------------------- Tablas dinamicas ventana con antepecho de 2 hojas ------------------------------------*/
+function mostrarDisplay_ventana_ante(id,boton) {
+     for(i=1;i<22;i++){
+        fila = document.getElementById(id).rows[i].style.display='';
+    }
+     document.getElementById(boton).setAttribute("onclick","ocultarDisplay_ventana_ante('"+id+"','"+boton+"');");
+}
+
+function ocultarDisplay_ventana_ante(id,boton){
+    for(i=1;i<22;i++){
+        fila = document.getElementById(id).rows[i].style.display='none';
+    }
+     document.getElementById(boton).setAttribute("onclick","mostrarDisplay_ventana_ante('"+id+"','"+boton+"');");
+}
+/*--------------------------------- Tablas dinamicas ventana 4 hojas ------------------------------------*/
+function mostrarDisplay_ventana4(id,boton) {
+     for(i=1;i<15;i++){
+        fila = document.getElementById(id).rows[i].style.display='';
+    }
+     document.getElementById(boton).setAttribute("onclick","ocultarDisplay_ventana4('"+id+"','"+boton+"');");
+}
+
+function ocultarDisplay_ventana4(id,boton){
+    for(i=1;i<15;i++){
+        fila = document.getElementById(id).rows[i].style.display='none';
+    }
+     document.getElementById(boton).setAttribute("onclick","mostrarDisplay_ventana4('"+id+"','"+boton+"');");
+}
+/*--------------------------------- Tablas dinamicas ventana 2 hojas ------------------------------------*/
+function mostrarDisplay_ventana2(id,boton) {
+     for(i=1;i<15;i++){
+        fila = document.getElementById(id).rows[i].style.display='';
+    }
+     document.getElementById(boton).setAttribute("onclick","ocultarDisplay_ventana2('"+id+"','"+boton+"');");
+}
+
+function ocultarDisplay_ventana2(id,boton){
+    for(i=1;i<15;i++){
+        fila = document.getElementById(id).rows[i].style.display='none';
+    }
+     document.getElementById(boton).setAttribute("onclick","mostrarDisplay_ventana2('"+id+"','"+boton+"');");
+}
+/*--------------------------------- Tablas dinamicas ventana sencilla ------------------------------------*/
+function mostrarDisplay_ventana(id,boton) {
+     for(i=1;i<12;i++){
+        fila = document.getElementById(id).rows[i].style.display='';
+    }
+     document.getElementById(boton).setAttribute("onclick","ocultarDisplay_ventana('"+id+"','"+boton+"');");
+}
+
+function ocultarDisplay_ventana(id,boton){
+    for(i=1;i<12;i++){
+        fila = document.getElementById(id).rows[i].style.display='none';
+    }
+     document.getElementById(boton).setAttribute("onclick","mostrarDisplay_ventana('"+id+"','"+boton+"');");
+}
+
+/*--------------------------------- Tablas dinamicas ventana 3 hojas ------------------------------------*/
+function mostratDisplay_ventana3(id,boton) {
+     for(i=1;i<12;i++){
+        fila = document.getElementById(id).rows[i].style.display='';
+    }
+     document.getElementById(boton).setAttribute("onclick","ocultarDisplay_ventana3('"+id+"','"+boton+"');");
+}
+
+function ocultarDisplay_ventana3(id,boton){
+    for(i=1;i<12;i++){
+        fila = document.getElementById(id).rows[i].style.display='none';
+    }
+     document.getElementById(boton).setAttribute("onclick","mostratDisplay_ventana3('"+id+"','"+boton+"');");
 }
