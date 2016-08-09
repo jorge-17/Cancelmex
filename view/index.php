@@ -7,7 +7,7 @@
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <a href="index.php" class="navbar-brand">Cancelmex</a>
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="navegador">
                    <li>
                        <a href="presupuesto.php">Presupuesto</a>
                    </li>
@@ -49,6 +49,17 @@
                         </ul>
                     </li>
                     <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Ventanas proyectables s/35 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="vetana_proyectable_sencilla.php">Ventana una hoja</a>
+                            </li>
+                            <li>
+                                <a href="vetana_proyectable_2.php">Ventana dos hojas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown">Puertas <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li>
@@ -59,6 +70,16 @@
                             </li>
                             <li>
                                 <a href="puerta_tres_cuartos.php">Puerta de 1 3/4"</a>
+                            </li>
+                             <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="puerta2_cuadriculada.php">Puerta cuadriculada de 2"</a>
+                            </li>
+                            <li>
+                                <a href="puerta3_cuadriculada.php">Puerta cuadriculada de 3"</a>
+                            </li>
+                            <li>
+                                <a href="puerta1_cuadriculada.php">Puerta cuadriculada de 1 3/4"</a>
                             </li>
                         </ul>
                     </li>

@@ -55,6 +55,17 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                         </ul>
                     </li>
                     <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Ventanas proyectables s/35 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="vetana_proyectable_sencilla.php">Ventana una hoja</a>
+                            </li>
+                            <li>
+                                <a href="vetana_proyectable_2.php">Ventana dos hojas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown">Puertas <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li>

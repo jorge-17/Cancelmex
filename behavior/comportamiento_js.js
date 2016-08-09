@@ -145,14 +145,14 @@ function ocultarDisplay_puerta2(id){
 
 /*----------------------- Tablas dinamicas puerta 1 3/4 pulgadas -----------------------------------*/
 function mostrarDisplay_puerta1(id) {
-     for(i=1;i<18;i++){
+     for(i=1;i<19;i++){
         fila = document.getElementById(id).rows[i].style.display='';
     }
      document.getElementById("boton_menu").setAttribute("onclick","ocultarDisplay_puerta1('"+id+"');");
 }
 
 function ocultarDisplay_puerta1(id){
-    for(i=1;i<18;i++){
+    for(i=1;i<19;i++){
         fila = document.getElementById(id).rows[i].style.display='none';
     }
      document.getElementById("boton_menu").setAttribute("onclick","mostrarDisplay_puerta1('"+id+"');");
@@ -256,4 +256,62 @@ function ocultarDisplay_ventana3(id,boton){
         fila = document.getElementById(id).rows[i].style.display='none';
     }
      document.getElementById(boton).setAttribute("onclick","mostratDisplay_ventana3('"+id+"','"+boton+"');");
+}
+/*--------------------------------- Tablas dinamicas ventana proyectable sencilla ------------------------------------*/
+function mostratDisplay_ventanap_sencilla(id,boton) {
+     for(i=1;i<9;i++){
+        fila = document.getElementById(id).rows[i].style.display='';
+    }
+     document.getElementById(boton).setAttribute("onclick","ocultarDisplay_ventanap_sencilla('"+id+"','"+boton+"');");
+}
+
+function ocultarDisplay_ventanap_sencilla(id,boton){
+    for(i=1;i<9;i++){
+        fila = document.getElementById(id).rows[i].style.display='none';
+    }
+     document.getElementById(boton).setAttribute("onclick","mostratDisplay_ventanap_sencilla('"+id+"','"+boton+"');");
+}
+
+/*---------------------- Tablas dinamicas puerta 3 pulgadas cuadriculada------------------------------------*/
+function mostrarDisplay_puerta3_c(id) {
+     for(i=1;i<15;i++){
+        fila = document.getElementById(id).rows[i].style.display='';
+    }
+     document.getElementById("boton_menu").setAttribute("onclick","ocultarDisplay_puerta3_c('"+id+"');");
+}
+
+function ocultarDisplay_puerta3_c(id){
+    for(i=1;i<15;i++){
+        fila = document.getElementById(id).rows[i].style.display='none';
+    }
+     document.getElementById("boton_menu").setAttribute("onclick","mostrarDisplay_puerta3_c('"+id+"');");
+}
+/*----------------------- Tablas dinamicas puerta 2 pulgadas cuadriculada----------------------------------*/
+function mostrarDisplay_puerta2_c(id) {
+     for(i=1;i<14;i++){
+        fila = document.getElementById(id).rows[i].style.display='';
+    }
+     document.getElementById("boton_menu").setAttribute("onclick","ocultarDisplay_puerta2_c('"+id+"');");
+}
+
+function ocultarDisplay_puerta2_c(id){
+    for(i=1;i<14;i++){
+        fila = document.getElementById(id).rows[i].style.display='none';
+    }
+     document.getElementById("boton_menu").setAttribute("onclick","mostrarDisplay_puerta2_C('"+id+"');");
+}
+
+/*----------------------- Tablas dinamicas puerta 1 3/4 pulgadas cuadriculada-----------------------------------*/
+function mostrarDisplay_puerta1_c(id) {
+     for(i=1;i<18;i++){
+        fila = document.getElementById(id).rows[i].style.display='';
+    }
+     document.getElementById("boton_menu").setAttribute("onclick","ocultarDisplay_puerta1_c('"+id+"');");
+}
+
+function ocultarDisplay_puerta1_c(id){
+    for(i=1;i<18;i++){
+        fila = document.getElementById(id).rows[i].style.display='none';
+    }
+     document.getElementById("boton_menu").setAttribute("onclick","mostrarDisplay_puerta1_c('"+id+"');");
 }

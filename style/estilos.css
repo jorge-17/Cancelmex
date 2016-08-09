@@ -31,11 +31,14 @@
     width: 100%;
 }
 body{
-    background: url("imagenes/g19537.png") fixed center;
+    background: url("imagenes/stripe_a2656665e5280d845a8dab8ff930f381.png") fixed center;
 }
 #boton_menu_l2,
 #boton_menu_l3,
 #boton_menu,
 #boton_menu_l1{
     float: left;
+}
+#navegador{
+    float: right;
 }

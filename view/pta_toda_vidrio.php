@@ -54,6 +54,17 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                         </ul>
                     </li>
                     <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Ventanas proyectables s/35 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="vetana_proyectable_sencilla.php">Ventana una hoja</a>
+                            </li>
+                            <li>
+                                <a href="vetana_proyectable_2.php">Ventana dos hojas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown">Puertas <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li>
@@ -131,7 +142,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='batiente 3/4'");
                                     $c=$result->fetch_assoc();
                                     $d=$c['precio'];
-                                    $m=($d/6.00)*$dolar;
+                                    $m=($d/6.00);
                                     $costo_batientel_l3=($alto*2)*$m;
                                     ?>
                                     <td><div id="batiente_l3"><?php echo round($costo_batientel_l3,2); ?></div></td>
@@ -142,7 +153,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='batiente 3/4'");
                                     $c=$result->fetch_assoc();
                                     $d=$c['precio'];
-                                    $m=($d/6.00)*$dolar;
+                                    $m=($d/6.00);
                                     $costo_batientes_l3=$ancho*$m;
                                     ?>
                                     <td><div><?php echo round($costo_batientes_l3,2); ?></div></td>

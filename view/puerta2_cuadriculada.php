@@ -4,7 +4,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
 ?>
    <html>
     <head>
-        <title>Puerta de 2"</title>
+        <title>Puerta de 2" cuadriculada</title>
         <link rel="stylesheet" type="text/css" href="../style/estilos.css">
         <link rel="stylesheet" type="text/css" href="../style/bootstrap-3.3.6-dist/css/bootstrap.css">
     </head>
@@ -87,7 +87,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
         <div class="contenido_e" align="center">
             <div class="contenido_i">
                 <table class="table">
-                    <tr><form action="puerta_dos_pulgadas.php?action=pta_2_pulgadas123987" method="post">
+                    <tr><form action="puerta2_cuadriculada.php?action=pta_2_pulgadas123987" method="post">
                        <th><input class="form-control" name="alto_pta_v" placeholder="Alto"></th>
                         <th><input class="form-control" name="ancho_pta_v" placeholder="Ancho"></th>
                         <th><input class="form-control" name="utilidad" value=".7" placeholder="70%"></th>
@@ -113,7 +113,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                         <td>
                             <table class="table" id="tabla_puerta2">
                                 <tr>
-                                    <th colspan="2" class="encabezados_tablas"><center><button id="boton_menu" onclick="mostrarDisplay_puerta2('tabla_puerta2')" class="btn btn-default"><span class="glyphicon glyphicon-menu-hamburger"></span></button>Linea 2"</center></th>
+                                    <th colspan="2" class="encabezados_tablas"><center><button id="boton_menu" onclick="mostrarDisplay_puerta2_c('tabla_puerta2')" class="btn btn-default"><span class="glyphicon glyphicon-menu-hamburger"></span></button>Linea 2"</center></th>
                                 </tr>
                                 <tr style="display:none">
                                     <td>Batiente doble vena lateral</td>
@@ -168,36 +168,13 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     <td><div id="ventana_l3"><?php echo round($costo_zcabezal_l3,2); ?></div></td>
                                 </tr>
                                 <tr style="display:none">
-                                    <td>Duela</td>
-                                    <?php
-                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='duela'");
-                                    $c=$result->fetch_assoc();
-                                    $m=$c['precio'];
-                                    if($alto<=2.1){
-                                        $alto_d=1.0;
-                                        $c=$ancho/.125;
-                                        $a=ceil($c);
-                                        $t=$a*$alto_d;
-                                        $p_duela=$m/6;
-                                        $costo_duela_l2=$t*$p_duela;
-                                    }elseif($alto>2.1 && $alto<=2.3){
-                                        $alto_d=1.1;
-                                        $c=$ancho/.125;
-                                        $a=ceil($c);
-                                        $t=$a*$alto_d;
-                                        $p_duela=$m/6;
-                                        $costo_duela_l2=$t*$p_duela;
-                                    }
-                                    ?>
-                                    <td><div><?php echo round($costo_duela_l2,2); ?></div></td>
-                                </tr>
-                                <tr style="display:none">
                                     <td>Intermedio</td>
                                     <?php
-                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='intermedio 2\"'");
+                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='intermedio_c_2'");
                                     $c=$result->fetch_assoc();
                                     $m=$c['precio'];
-                                    $costo_intermedio_l3=$ancho*$m;
+                                    $n=($m/6.00);
+                                    $costo_intermedio_l3=(($ancho*4)+($alto))*$n;
                                     ?>
                                     <td><div><?php echo round($costo_intermedio_l3,2); ?></div></td>
                                 </tr>
@@ -275,12 +252,9 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     <?php
                                     $suma_total_l3=$costo_batientel_l2+$costo_batientes_l3+$costo_cchapa_l3+$costo_zpuerta_l3+
                                         $costo_zcabezal_l3+$costo_bisagras_l3+$costo_pasador_l3+$costo_trompas_l3+
-                                        $costo_acrilastic_l3+$costo_tornillos_l3+$costo_vinil_l3+$costo_resbalon_l3;
+                                        $costo_acrilastic_l3+$costo_tornillos_l3+$costo_vinil_l3+$costo_resbalon_l3+$costo_intermedio_l3;
 
-                                    $suma_total_l3_z=$costo_batientel_l2+$costo_batientes_l3+$costo_cchapa_l3+$costo_zpuerta_l3+
-                                        $costo_zcabezal_l3+$costo_bisagras_l3+$costo_trompas_l3+$costo_acrilastic_l3+
-                                        $costo_pasador_l3+$costo_tornillos_l3+$costo_vinil_l3+$costo_duela_l2+$costo_intermedio_l3+
-                                        $costo_resbalon_l3;
+
                                     ?>
                                     <td>
                                         <table class="mini_tablas">
@@ -309,7 +283,6 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                         <table class="mini_tablas">
                                             <tr>
                                                 <td><div><?php echo $costo_claro_l3_q; ?></div></td>
-                                                <td><div><?php echo $costo_claro_c_duela; ?>*</div></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -318,7 +291,6 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     <table class="mini_tablas">
                                         <tr>
                                             <td><div class="precios"><?php echo round($costo_claro_l3,2); ?></div></td>
-                                            <td><div class="precios"><?php echo round($costo_claro_l3_z,2); ?>*</div></td>
                                         </tr>
                                     </table>
                                 </td></tr>
@@ -341,7 +313,6 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                         <table class="mini_tablas">
                                             <tr>
                                                 <td><div><?php echo $costo_chino_l3_q; ?></div></td>
-                                                <td><div><?php echo $costo_chino_c_duela; ?>*</div></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -350,7 +321,6 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                        <table class="mini_tablas">
                                         <tr>
                                             <td><div class="precios"><?php echo round($costo_chino_l3,2); ?></div></td>
-                                            <td><div class="precios"><?php echo round($costo_chino_l3_z,2); ?>*</div></td>
                                         </tr>
                                     </table>
                                         </td>
@@ -374,7 +344,6 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                         <table class="mini_tablas">
                                             <tr>
                                                 <td><div><?php echo $costo_satinado_l3_q; ?></div></td>
-                                                <td><div><?php echo $costo_satinado_c_duela; ?>*</div></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -383,7 +352,6 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     <td><table class="mini_tablas">
                                         <tr>
                                             <td><div class="precios"><?php echo round($costo_satinado_l3,2); ?></div></td>
-                                            <td><div class="precios"><?php echo round($costo_satinado_l3_z,2); ?>*</div></td>
                                         </tr>
                                     </table></td>
                                 </tr>
@@ -406,7 +374,6 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                         <table class="mini_tablas">
                                             <tr>
                                                 <td><div><?php echo $costo_plastico_l3_q; ?></div></td>
-                                                <td><div><?php echo $costo_plastico_c_duela; ?>*</div></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -415,7 +382,6 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     <td><table class="mini_tablas">
                                         <tr>
                                             <td><div class="precios"><?php echo round($costo_plastico_l3,2); ?></div></td>
-                                            <td><div class="precios"><?php echo round($costo_plastico_l3_z,2); ?>*</div></td>
                                         </tr>
                                     </table></td>
                                 </tr>
@@ -438,7 +404,6 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                         <table class="mini_tablas">
                                             <tr>
                                                 <td><div><?php echo $costo_acrilico_l3_q; ?></div></td>
-                                                <td><div><?php echo $costo_acrilico_c_duela; ?>*</div></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -447,7 +412,6 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     <td><table class="mini_tablas">
                                         <tr>
                                             <td><div class="precios"><?php echo round($costo_acrilico_l3,2); ?></div></td>
-                                            <td><div class="precios"><?php echo round($costo_acrilico_l3_z,2); ?>*</div></td>
                                         </tr>
                                     </table></td>
                                 </tr>

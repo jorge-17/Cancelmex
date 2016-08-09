@@ -54,6 +54,17 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                         </ul>
                     </li>
                     <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Ventanas proyectables s/35 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="vetana_proyectable_sencilla.php">Ventana una hoja</a>
+                            </li>
+                            <li>
+                                <a href="vetana_proyectable_2.php">Ventana dos hojas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown">Puertas <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li>
@@ -84,7 +95,8 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                         <td><button type="submit" class="btn btn-primary">Calcular</button></td>
                         <td><!-- FXEXCHANGERATE.COM EXCHANGE RATE CONVERTER START --><div style="width:196px;border:1px solid #2D6AB4;background-color:#F0F0F0;"><div style="text-align:left;background-color:#2D6AB4;border-bottom:0px;height:18px; font-size:12px;font-weight:bold;padding-top:2px; padding-left:5px"><span  style="background-image:url(http://ww.fxexchangerate.com/flag.png); background-position: 0 -2064px; width:100%; height:15px; background-repeat:no-repeat;padding-left:2px;"><a href="http://usd.fxexchangerate.com/" target="_blank" style="color:#FFFFFF; text-decoration:none;padding-left:22px;">Dólar estadounidense</a></span></div><script type="text/javascript">var fm="USD";var ft="MXN,";var hb="2D6AB4";var hc="FFFFFF";var bb = "F0F0F0";var bo = "2D6AB4";var tz="-6s";var wh="196x80";var lg="es";</script><script type="text/javascript" src="http://www.fxexchangerate.com/converter.php"></script></div><!-- FXEXCHANGERATE.COM  EXCHANGE RATE CONVERTER END -->
                        </td>
-                    </tr></form>
+                       </form>
+                    </tr>
                 </table>
                 <table class="table">
                     <tr>
@@ -106,10 +118,10 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                 <tr style="display:none">
                                     <td>Canal Liso lateral</td>
                                     <?php
-                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='bolsa lisa 3\"'");
+                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='bolsa lisa 2\"'");
                                     $c=$result->fetch_assoc();
                                     $d=$c['precio'];
-                                    $m=($d/6.00)*$dolar;
+                                    $m=($d/6.00);
                                     $costo_bolsal_l3=($alto*2)*$m;
                                     ?>
                                     <td><div id="canall_l3"><?php echo round($costo_bolsal_l3,2); ?></div></td>
@@ -117,10 +129,10 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                 <tr style="display:none">
                                     <td>Canal Liso Superior</td>
                                     <?php
-                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='bolsa lisa 3\"'");
+                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='bolsa lisa 2\"'");
                                     $c=$result->fetch_assoc();
                                     $d=$c['precio'];
-                                    $m=($d/6.00)*$dolar;
+                                    $m=($d/6.00);
                                     $costo_bolsas_l3=$ancho*$m;
                                     ?>
                                     <td><div id="canals_l3"><?php echo round($costo_bolsas_l3,2); ?></div></td>
@@ -131,7 +143,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='batiente 3/4'");
                                     $c=$result->fetch_assoc();
                                     $d=$c['precio'];
-                                    $m=($d/6.00)*$dolar;
+                                    $m=($d/6.00);
                                     $costo_batientel_l3=($alto*2)*$m;
                                     ?>
                                     <td><div id="batiente_l3"><?php echo round($costo_batientel_l3,2); ?></div></td>
@@ -142,7 +154,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='batiente 3/4'");
                                     $c=$result->fetch_assoc();
                                     $d=$c['precio'];
-                                    $m=($d/6.00)*$dolar;
+                                    $m=($d/6.00);
                                     $costo_batientes_l3=$ancho*$m;
                                     ?>
                                     <td><div><?php echo round($costo_batientes_l3,2); ?></div></td>
@@ -153,7 +165,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='c. chapa 1 3/4\"'");
                                     $c=$result->fetch_assoc();
                                     $d=$c['precio'];
-                                    $m=($d/6.00)*$dolar;
+                                    $m=($d/4.00);
                                     $costo_cchapa_l3=($alto*2)*$m;
                                     ?>
                                     <td><div id="chapa_l3"><?php echo round($costo_cchapa_l3,2); ?></div></td>
@@ -184,7 +196,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='junquillo 1 3/4\"'");
                                     $c=$result->fetch_assoc();
                                     $d=$c['precio'];
-                                    $m=($d/6.00)*$dolar;
+                                    $m=($d/6.00);
                                     $costo_junquillo_l3=(($ancho*4)+($alto*4))*$m;
                                     ?>
                                     <td><div id="ventana_l3"><?php echo round($costo_junquillo_l3,2); ?></div></td>
@@ -222,6 +234,17 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     $costo_intermedio_l3=$ancho*$m;
                                     ?>
                                     <td><div><?php echo round($costo_intermedio_l3,2); ?></div></td>
+                                </tr>
+                                <tr style="display:none">
+                                    <td>Junquillo con duela</td>
+                                     <?php
+                                    $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='junquillo 1 3/4\"'");
+                                    $c=$result->fetch_assoc();
+                                    $d=$c['precio'];
+                                    $m=($d/6.00);
+                                    $costo_junquillo_duela_l3=($ancho*4)*$m;
+                                    ?>
+                                    <td><div id="ventana_l3"><?php echo round($costo_junquillo_duela_l3,2); ?></div></td>
                                 </tr>
                                 <tr style="display:none">
                                     <td>Pivote descentrado</td>
@@ -285,14 +308,14 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                 <tr style="display:none">
                                     <td>Suma Total</td>
                                     <?php
-                                    $suma_total_l3=$costo_bolsal_l3+$costo_bolsas_l3+$costo_batientel_l3+$costo_batientes_l3+
-                                        $costo_cchapa_l3+$costo_zpuerta_l3+$costo_zcabezal_l3+$costo_junquillo_l3+$costo_pivotedes_l3+
-                                        $costo_barilla_l3+$costo_manija_l3+$costo_acrilastic_l3+$costo_tornillos_l3+$costo_vinil_l3;
+                                    $suma_total_l3=$costo_bolsal_l3+$costo_bolsas_l3+$costo_batientel_l3+$costo_batientes_l3+$costo_cchapa_l3+
+                                        $costo_zpuerta_l3+$costo_zcabezal_l3+$costo_junquillo_l3+$costo_pivotedes_l3+$costo_barilla_l3+
+                                        $costo_manija_l3+$costo_acrilastic_l3+$costo_tornillos_l3+$costo_vinil_l3;
 
-                                    $suma_total_l3_z=$costo_bolsal_l3+$costo_bolsas_l3+$costo_batientel_l3+$costo_batientes_l3+
-                                        $costo_cchapa_l3+$costo_zpuerta_l3+$costo_zcabezal_l3+$costo_junquillo_l3+$costo_pivotedes_l3+
-                                        $costo_barilla_l3+$costo_manija_l3+$costo_acrilastic_l3+$costo_tornillos_l3+$costo_vinil_l3+
-                                        $costo_duela_l3+$costo_intermedio_l3;
+                                    $suma_total_l3_z=$costo_bolsal_l3+$costo_bolsas_l3+$costo_batientel_l3+$costo_batientes_l3+$costo_cchapa_l3+
+                                        $costo_zpuerta_l3+$costo_zcabezal_l3+$costo_junquillo_l3+$costo_pivotedes_l3+$costo_barilla_l3+
+                                        $costo_manija_l3+$costo_acrilastic_l3+$costo_tornillos_l3+$costo_vinil_l3+$costo_duela_l3+
+                                        $costo_intermedio_l3+$costo_junquillo_duela_l3;
                                     ?>
                                     <td><table class="mini_tablas">
                                             <tr>
