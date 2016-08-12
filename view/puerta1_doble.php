@@ -113,16 +113,16 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                         <td>
                             <table class="table" id="tabla_puerta1">
                                 <tr>
-                                    <th colspan="2" class="encabezados_tablas"><center><button class="btn btn-default" id="boton_menu" onclick="mostrarDisplay_puerta1('tabla_puerta1')"><span class="glyphicon glyphicon-menu-hamburger"></span></button>Linea 1 3/4"</center></th>
+                                    <th colspan="2" class="encabezados_tablas"><center><button class="btn btn-default" id="boton_menu" onclick="mostrarDisplay_puerta1_d('tabla_puerta1')"><span class="glyphicon glyphicon-menu-hamburger"></span></button>Linea 1 3/4"</center></th>
                                 </tr>
                                 <tr style="display:none">
-                                    <td>Canal Liso lateral</td>
+                                    <td>Canal Liso</td>
                                     <?php
                                     $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='bolsa lisa 2\"'");
                                     $c=$result->fetch_assoc();
                                     $d=$c['precio'];
                                     if((($alto*2)+$ancho)<=9){
-                                        $costo_bolsal_l3=$d;
+                                        $costo_bolsal_l3=($d*1.5);
                                     }else{
                                         $costo_bolsal_l3=($d*2);
                                     }
@@ -130,14 +130,14 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     <td><div id="canall_l3"><?php echo round($costo_bolsal_l3,2); ?></div></td>
                                 </tr>
                                 <tr style="display:none">
-                                    <td>Batiente 3/4 lateral</td>
+                                    <td>Batiente 3/4</td>
                                     <?php
                                     $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='batiente 3/4'");
                                     $c=$result->fetch_assoc();
                                     $d=$c['precio'];
                                     $n=$d*1.5;
                                     if((($alto*2)+$ancho)<=9){
-                                        $costo_batientel_l3=$n;
+                                        $costo_batientel_l3=($n*1.5);
                                     }else{
                                         $costo_batientel_l3=($n*2);
                                     }
@@ -306,14 +306,15 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                 <tr style="display:none">
                                     <td>Suma Total</td>
                                     <?php
-                                    $suma_total_l3=$costo_bolsal_l3+$costo_bolsas_l3+$costo_batientel_l3+$costo_batientes_l3+$costo_cchapa_l3+
-                                        $costo_zpuerta_l3+$costo_zcabezal_l3+$costo_junquillo_l3+$costo_pivotedes_l3+$costo_barilla_l3+
-                                        $costo_manija_l3+$costo_acrilastic_l3+$costo_tornillos_l3+$costo_vinil_l3;
+                                    $suma_total_l3=$costo_bolsal_l3+$costo_batientel_l3+$costo_cchapa_l3+$costo_zpuerta_l3+
+                                        $costo_zcabezal_l3+$costo_junquillo_l3+$costo_pivotedes_l3+$costo_barilla_l3+
+                                        $costo_manija_l3+$costo_pasador_l3+$costo_acrilastic_l3+$costo_tornillos_l3+
+                                        $costo_vinil_l3;
 
-                                    $suma_total_l3_z=$costo_bolsal_l3+$costo_bolsas_l3+$costo_batientel_l3+$costo_batientes_l3+$costo_cchapa_l3+
-                                        $costo_zpuerta_l3+$costo_zcabezal_l3+$costo_junquillo_l3+$costo_pivotedes_l3+$costo_barilla_l3+
-                                        $costo_manija_l3+$costo_acrilastic_l3+$costo_tornillos_l3+$costo_vinil_l3+$costo_duela_l3+
-                                        $costo_intermedio_l3+$costo_junquillo_duela_l3;
+                                    $suma_total_l3_z=$costo_bolsal_l3+$costo_batientel_l3+$costo_cchapa_l3+$costo_zpuerta_l3+
+                                        $costo_zcabezal_l3+$costo_junquillo_l3+$costo_pivotedes_l3+$costo_barilla_l3+
+                                        $costo_manija_l3+$costo_pasador_l3+$costo_acrilastic_l3+$costo_tornillos_l3+
+                                        $costo_vinil_l3+$costo_duela_l3+$costo_intermedio_l3+$costo_junquillo_duela_l3;
                                     ?>
                                     <td><table class="mini_tablas">
                                             <tr>

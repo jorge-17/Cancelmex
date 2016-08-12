@@ -314,13 +314,14 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                 <tr style="display:none">
                                     <td>Suma Total</td>
                                     <?php
-                                    $suma_total_l3=$costo_bolsal_l3+$costo_bolsas_l3+$costo_batientel_l3+$costo_batientes_l3+
-                                        $costo_cchapa_l3+$costo_zpuerta_l3+$costo_zventana_l3+$costo_pivotedes_l3+$costo_manija_l3+
-                                        $costo_acrilastic_l3+$costo_tornillos_l3+$costo_vinil_l3;
+                                    $suma_total_l3=$costo_bolsal_l3+$costo_bolsas_l3+$costo_batientel_l3+$costo_batientes_l3+$costo_cchapa_l3+
+                                        $costo_zpuerta_l3+$costo_zventana_l3+$costo_pivotedes_l3+$costo_manija_l3+$costo_barilla_l3+
+                                        $costo_pasador_l3+$costo_acrilastic_l3+$costo_tornillos_l3+$costo_vinil_l3;
 
-                                    $suma_total_l3_z=$costo_bolsal_l3+$costo_bolsas_l3+$costo_batientel_l3+$costo_batientes_l3+
-                                        $costo_cchapa_l3+$costo_zpuerta_l3+$costo_zventana_l3+$costo_pivotedes_l3+$costo_manija_l3+
-                                        $costo_acrilastic_l3+$costo_tornillos_l3+$costo_vinil_l3+$costo_duela_l3+$costo_intermedio_l3;
+                                    $suma_total_l3_z=$costo_bolsal_l3+$costo_bolsas_l3+$costo_batientel_l3+$costo_batientes_l3+$costo_cchapa_l3+
+                                        $costo_zpuerta_l3+$costo_zventana_l3+$costo_pivotedes_l3+$costo_manija_l3+$costo_barilla_l3+
+                                        $costo_pasador_l3+$costo_acrilastic_l3+$costo_tornillos_l3+$costo_vinil_l3+$costo_duela_l3+
+                                        $costo_intermedio_l3;
                                     ?>
                                     <td><table class="mini_tablas">
                                             <tr>
