@@ -196,8 +196,11 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='intermedio_c_3'");
                                     $c=$result->fetch_assoc();
                                     $m=$c['precio'];
-                                    $n=($m/6.00);
-                                    $costo_intermedio_l3=(($ancho*4)+($alto))*$n;
+                                    if((($ancho*4)+($alto))<=6){
+                                        $costo_intermedio_l3=$m;
+                                    }else{
+                                        $costo_intermedio_l3=($m*1.5);
+                                    }
                                     ?>
                                     <td><div><?php echo round($costo_intermedio_l3,2); ?></div></td>
                                 </tr>
@@ -246,7 +249,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                                     $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='vinil'");
                                     $c=$result->fetch_assoc();
                                     $m=$c['precio'];
-                                    $costo_vinil_l3=(($ancho*2)+($alto*2))*$m;
+                                    $costo_vinil_l3=((($ancho*2)+($alto*2))*$m)*3;
                                     ?>
                                     <td><div id="vinil_l3"><?php echo round($costo_vinil_l3,2); ?></div></td>
                                 </tr>

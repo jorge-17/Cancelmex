@@ -81,6 +81,13 @@
                             <li>
                                 <a href="puerta1_cuadriculada.php">Puerta cuadriculada de 1 3/4"</a>
                             </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="puerta3_doble.php">Puerta doble 3"</a>
+                            </li>
+                            <li>
+                                <a href="puerta1_doble.php">Puerta doble 1 3/4"</a>
+                            </li>
                         </ul>
                     </li>
                     <li>

@@ -145,14 +145,14 @@ function ocultarDisplay_puerta2(id){
 
 /*----------------------- Tablas dinamicas puerta 1 3/4 pulgadas -----------------------------------*/
 function mostrarDisplay_puerta1(id) {
-     for(i=1;i<19;i++){
+     for(i=1;i<17;i++){
         fila = document.getElementById(id).rows[i].style.display='';
     }
      document.getElementById("boton_menu").setAttribute("onclick","ocultarDisplay_puerta1('"+id+"');");
 }
 
 function ocultarDisplay_puerta1(id){
-    for(i=1;i<19;i++){
+    for(i=1;i<17;i++){
         fila = document.getElementById(id).rows[i].style.display='none';
     }
      document.getElementById("boton_menu").setAttribute("onclick","mostrarDisplay_puerta1('"+id+"');");
@@ -314,4 +314,18 @@ function ocultarDisplay_puerta1_c(id){
         fila = document.getElementById(id).rows[i].style.display='none';
     }
      document.getElementById("boton_menu").setAttribute("onclick","mostrarDisplay_puerta1_c('"+id+"');");
+}
+/*---------------------- Tablas dinamicas puerta 3 pulgadas ------------------------------------*/
+function mostrarDisplay_puerta3_d(id) {
+     for(i=1;i<18;i++){
+        fila = document.getElementById(id).rows[i].style.display='';
+    }
+     document.getElementById("boton_menu").setAttribute("onclick","ocultarDisplay_puerta3_d('"+id+"');");
+}
+
+function ocultarDisplay_puerta3_d(id){
+    for(i=1;i<18;i++){
+        fila = document.getElementById(id).rows[i].style.display='none';
+    }
+     document.getElementById("boton_menu").setAttribute("onclick","mostrarDisplay_puerta3_d('"+id+"');");
 }
