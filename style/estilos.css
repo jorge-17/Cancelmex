@@ -12,9 +12,8 @@
     width: 979px;
     background-color: white;
 }
-.contenid_e{
+.contenido_e{
     width: 100%;
-    background-color: white;
 }
 .anotaciones{
     color: red;
@@ -38,5 +37,16 @@ body{
     float: left;
 }
 #navegador{
+    float: right;
+}
+.contenido_i_lista{
+    width: 90%;
+    background-color: white;
+}
+.titulo_grupo{
+    background-color: #2E2EFE;
+    color: white;
+}
+.dolares{
     float: right;
 }

@@ -21,5 +21,13 @@ switch($action){
         <script>window.location='../view/ingresar_materiales.php'</script>
         <?php
         break;
+    case "insert_lista":
+        mysqli_query($con,"INSERT INTO `lista_precios`(`id`, `nombre`, `medida`, `s_anodizar`, `c_natural`, `ano_negro`, `electro`, `blanco`, `lac_hueso`, `madera`) VALUES ('{$_POST["id"]}','{$_POST["nombre"]}',{$_POST["medida"]},{$_POST["s_ano"]},{$_POST["natural"]},
+        {$_POST["ano_negro"]},{$_POST["electro"]},{$_POST["blanco"]},{$_POST["hueso"]},{$_POST["madera"]})");
+        ?>
+        <script>alert("Precio Registrado")</script>
+        <script>window.location='../view/ingresar_precios.php'</script>
+        <?php
+        break;
 }
 ?>

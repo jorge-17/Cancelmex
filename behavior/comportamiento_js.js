@@ -344,3 +344,50 @@ function ocultarDisplay_puerta1_d(id){
     }
      document.getElementById("boton_menu").setAttribute("onclick","mostrarDisplay_puerta1_d('"+id+"');");
 }
+/*------------------------------------------------------------------------------------------------------------*/
+function calcular(medida,s_a,nat,ano_n,elec,blan,lac,mad,a,s_a_s,nat_s,ano_n_s,elec_s,blan_s,lac_s,mad_s){
+    var d = document.getElementById("dolar").value;
+    var medida_a= document.getElementById(a).value;
+
+    var pre_peso_s_a=s_a*d;
+    var pre_m_s_a=pre_peso_s_a/medida;
+    var pre_f_s_a=pre_m_s_a*medida_a;
+    var a=pre_f_s_a*1.35;
+    document.getElementById(s_a_s).innerHTML=a.toFixed(2);
+
+    var pre_peso_nat=nat*d;
+    var pre_m_nat=pre_peso_nat/medida;
+    var pre_f_nat=pre_m_nat*medida_a;
+    var b=pre_f_nat*1.35;
+    document.getElementById(nat_s).innerHTML=b.toFixed(2);
+
+    var pre_peso_ano_n=ano_n*d;
+    var pre_m_ano_n=pre_peso_ano_n/medida;
+    var pre_f_ano_n=pre_m_ano_n*medida_a;
+    var c=pre_f_ano_n*1.35;
+    document.getElementById(ano_n_s).innerHTML=c.toFixed(2);
+
+    var pre_peso_elec=elec*d;
+    var pre_m_elec=pre_peso_elec/medida;
+    var pre_f_elec=pre_m_elec*medida_a;
+    var d=pre_f_elec*1.35;
+    document.getElementById(elec_s).innerHTML=d.toFixed(2);
+
+    var pre_peso_blan=blan*d;
+    var pre_m_blan=pre_peso_blan/medida;
+    var pre_f_blan=pre_m_blan*medida_a;
+    var e=pre_f_blan*1.35;
+    document.getElementById(blan_s).innerHTML=e.toFixed(2);
+
+    var pre_peso_lac=lac*d;
+    var pre_m_lac=pre_peso_lac/medida;
+    var pre_f_lac=pre_m_lac*medida_a;
+    var f=pre_f_lac*1.35;
+    document.getElementById(lac_s).innerHTML=f.toFixed(2);
+
+    var pre_peso_mad=mad*d;
+    var pre_m_mad=pre_peso_mad/medida;
+    var pre_f_mad=pre_m_mad*medida_a;
+    var g=pre_f_mad*1.35;
+    document.getElementById(mad_s).innerHTML=g.toFixed(2);
+}

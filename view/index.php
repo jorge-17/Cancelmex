@@ -9,7 +9,7 @@
                 <a href="index.php" class="navbar-brand">Cancelmex</a>
                 <ul class="nav navbar-nav" id="navegador">
                    <li>
-                       <a href="presupuesto.php">Presupuesto</a>
+                       <a href="lista_precios.php">Lista de Precios</a>
                    </li>
                    <li>
                         <a href="mosquiteros.php">Mosquiteros</a>
