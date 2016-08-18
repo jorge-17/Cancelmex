@@ -10,9 +10,17 @@
             <div class="container-fluid">
                 <a href="index.php" class="navbar-brand">Cancelmex</a>
                 <ul class="nav navbar-nav">
-                   <li>
-                       <a href="presupuesto.php">Presupuesto</a>
-                   </li>
+                   <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Perfiles <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="lista_precios.php">Cotizacion de perfiles</a>
+                            </li>
+                            <li>
+                                <a href="lista_precios_consulta.php">Lista de precios</a>
+                            </li>
+                        </ul>
+                    </li>
                    <li>
                         <a href="mosquiteros.php">Mosquiteros</a>
                     </li>

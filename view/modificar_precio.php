@@ -1,19 +1,19 @@
 <?php
 error_reporting(E_ALL ^ E_NOTICE);
 $con=mysqli_connect("localhost","root","","calcelmex");
+$valor_id=$_POST["precio_id"];
 ?>
-   <html>
+<html>
     <head>
-        <title>Ingresar materiales</title>
+        <title>Modificar precios</title>
         <link rel="stylesheet" type="text/css" href="../style/estilos.css">
-        <link rel="stylesheet" type="text/css" href="../style/bootstrap-3.3.6-dist/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="../style/bootstrap-3.3.6-dist/css/bootstrap.css">
     </head>
     <body>
-      <nav class="navbar navbar-default">
+       <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <a href="index.php" class="navbar-brand">Cancelmex</a>
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="navegador">
                    <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown">Perfiles <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -52,7 +52,7 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                         <a class="dropdown-toggle" data-toggle="dropdown">Ventanas con antepecho <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="ventana_c_antepecho.php">Ventana con antepecho</a>
+                                <a href="ventana_c_antepecho.php">Ventana sencilla</a>
                             </li>
                             <li>
                                 <a href="ventana_c_ante_tres_hojas.php">Ventana tres hojas</a>
@@ -85,6 +85,23 @@ $con=mysqli_connect("localhost","root","","calcelmex");
                             <li>
                                 <a href="puerta_tres_cuartos.php">Puerta de 1 3/4"</a>
                             </li>
+                             <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="puerta2_cuadriculada.php">Puerta cuadriculada de 2"</a>
+                            </li>
+                            <li>
+                                <a href="puerta3_cuadriculada.php">Puerta cuadriculada de 3"</a>
+                            </li>
+                            <li>
+                                <a href="puerta1_cuadriculada.php">Puerta cuadriculada de 1 3/4"</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="puerta3_doble.php">Puerta doble 3"</a>
+                            </li>
+                            <li>
+                                <a href="puerta1_doble.php">Puerta doble 1 3/4"</a>
+                            </li>
                         </ul>
                     </li>
                     <li>
@@ -94,47 +111,59 @@ $con=mysqli_connect("localhost","root","","calcelmex");
             </div>
         </nav>
         <div class="contenido_e" align="center">
-        <div class="contenido_i">
-       <form action="../cancelmex-bd/manejadorBD.php?action=insert_material" method="post">
-           <table class="table">
-               <tr>
-                   <td><input type="text" name="nombre_material" class="form-control" placeholder="NAME"></td>
-                   <td><input type="text" name="precio_material" class="form-control" placeholder="PRICE"></td>
-               </tr>
-               <tr>
-                   <td colspan="5"><center><button type="submit" class="btn btn-primary">Ingresar</button></center></td>
-               </tr>
-           </table>
-           </form>
-           <table class="table" id="tabla_registro_materiales">
-            <tr>
-                <th>Nombre</th>
-                <th>Precio</th>
-                <th></th>
-                <th></th>
-            </tr>
-             <?php
-               $result = mysqli_query($con,"SELECT * FROM `materials` ORDER BY `nombre` ASC");
+            <div class="contenido_i_lista">
+            <table class="table">
+                <tr>
+                    <th>Clave</th>
+                    <th>Descripcion</th>
+                    <th>Medida</th>
+                    <th>Sin Anodizar</th>
+                    <th>Natural</th>
+                    <th>Anodizados Negro</th>
+                    <th>Electro 200</th>
+                    <th>Blanco</th>
+                    <th>Lacados Hueso</th>
+                    <th>Madera</th>
+                </tr>
+                <?php
+            $result = mysqli_query($con,"SELECT * FROM `lista_precios` WHERE id='$valor_id'");
                  while($row = mysqli_fetch_array($result)) {
-               ?>
-              <tr>
-                  <td><?php  echo $row['nombre']; ?></td>
-                  <td><?php echo $row['price']; ?></td>
-                  <form action="../cancelmex-bd/manejadorBD.php?action=update_price26171726" method="post">
-                  <input type="hidden" value="<?php  echo $row['nombre']; ?>" name="nombre">
-                  <td><input type="text" placeholder="$" name="nuevo_precio" class="form-control"></td>
-                  <td><button type="submit" class="btn btn-warning">Modificar</button></td>
-                  </form>
-              </tr>
-              <?php
-                     }
+            ?>
+            <form action="../cancelmex-bd/manejadorBD.php?action=Update_precio17266271" method="post">
+            <tr>
+               <?php
+                     $m_1=$row['medida'];
+                     $s_ano=$row['s_anodizar'];
+                     $natural=$row['c_natural'];
+                     $ano_n=$row['ano_negro'];
+                     $electro=$row['electro'];
+                     $blanco=$row['blanco'];
+                     $lac_h=$row['lac_hueso'];
+                     $madera=$row['madera'];
                      ?>
-
-           </table>
+                <td><?php echo $row['id']; ?><input type="hidden" value="<?php echo $row['id']; ?>" name="value_id"></td>
+                <td><?php echo $row['nombre']; ?></td>
+                <td><input value="<?php echo $m_1;?>" name="medida" class="form-control"></td>
+                <td><input value="<?php echo $s_ano;?>" name="sin_anodizar" class="form-control"></td>
+                <td><input value="<?php echo $natural;?>" name="natural_1" class="form-control"></td>
+                <td><input value="<?php echo $ano_n;?>" name="anodizado_n" class="form-control"></td>
+                <td><input value="<?php echo $electro;?>" name="electro" class="form-control"></td>
+                <td><input value="<?php echo $blanco;?>" name="blanco" class="form-control"></td>
+                <td><input value="<?php echo $lac_h;?>" name="lacado" class="form-control"></td>
+                <td><input value="<?php echo $madera;?>" name="madera" class="form-control"></td>
+                </tr>
+                <?php
+                     }
+                ?>
+                <tr>
+                    <td colspan="10"><center><button type="submit" class="btn btn-primary">Modificar</button></center></td>
+                </tr>
+                </form>
+            </table>
         </div>
         </div>
     </body>
     <script type="text/javascript" src="../behavior/comportamiento_js.js"></script>
     <script type="text/javascript" src="../behavior/jquery.min.js"></script>
-    <script type="text/javascript" src="../style/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../style/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
 </html>

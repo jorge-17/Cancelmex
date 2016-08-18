@@ -370,8 +370,8 @@ function calcular(medida,s_a,nat,ano_n,elec,blan,lac,mad,a,s_a_s,nat_s,ano_n_s,e
     var pre_peso_elec=elec*d;
     var pre_m_elec=pre_peso_elec/medida;
     var pre_f_elec=pre_m_elec*medida_a;
-    var d=pre_f_elec*1.35;
-    document.getElementById(elec_s).innerHTML=d.toFixed(2);
+    var z=pre_f_elec*1.35;
+    document.getElementById(elec_s).innerHTML=z.toFixed(2);
 
     var pre_peso_blan=blan*d;
     var pre_m_blan=pre_peso_blan/medida;

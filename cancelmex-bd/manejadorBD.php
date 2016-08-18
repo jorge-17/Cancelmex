@@ -29,5 +29,21 @@ switch($action){
         <script>window.location='../view/ingresar_precios.php'</script>
         <?php
         break;
+    case "Update_precio17266271":
+        mysqli_query($con,"UPDATE `lista_precios` SET `medida`={$_POST["medida"]},`s_anodizar`={$_POST["sin_anodizar"]},
+        `c_natural`={$_POST["natural_1"]},`ano_negro`={$_POST["anodizado_n"]},`electro`={$_POST["electro"]},
+        `blanco`={$_POST["blanco"]},`lac_hueso`={$_POST["lacado"]},`madera`={$_POST["madera"]} WHERE `id`='{$_POST["value_id"]}'");
+            ?>
+        <script>alert("Precio Modificado")</script>
+        <script>window.location='../view/modificar_precio.php'</script>
+        <?php
+        break;
+    case "Delete_precio17266271":
+        mysqli_query($con,"DELETE FROM `lista_precios` WHERE id='{$_POST["precio_id"]}'");
+        ?>
+        <script>alert("Precio Eliminado")</script>
+        <script>window.location='../view/lista_precios_consulta.php'</script>
+        <?php
+        break;
 }
 ?>
