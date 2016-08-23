@@ -1,16 +1,17 @@
 <?php
 error_reporting(E_ALL ^ E_NOTICE);
 $con=mysqli_connect("localhost","root","","calcelmex");
-$valor_id=$_POST["precio_id"];
 ?>
-<html>
+   <html>
     <head>
-        <title>Modificar precios</title>
+        <title>
+            Cancel Corredizo
+        </title>
         <link rel="stylesheet" type="text/css" href="../style/estilos.css">
         <link rel="stylesheet" type="text/css" href="../style/bootstrap-3.3.6-dist/css/bootstrap.css">
     </head>
     <body>
-       <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <a href="index.php" class="navbar-brand">Cancelmex</a>
                 <ul class="nav navbar-nav" id="navegador">
@@ -122,56 +123,97 @@ $valor_id=$_POST["precio_id"];
             </div>
         </nav>
         <div class="contenido_e" align="center">
-            <div class="contenido_i_lista">
-            <table class="table">
-                <tr>
-                    <th>Clave</th>
-                    <th>Descripcion</th>
-                    <th>Medida</th>
-                    <th>Sin Anodizar</th>
-                    <th>Natural</th>
-                    <th>Anodizados Negro</th>
-                    <th>Electro 200</th>
-                    <th>Blanco</th>
-                    <th>Lacados Hueso</th>
-                    <th>Madera</th>
-                </tr>
-                <?php
-            $result = mysqli_query($con,"SELECT * FROM `lista_precios` WHERE id='$valor_id'");
-                 while($row = mysqli_fetch_array($result)) {
-            ?>
-            <form action="../cancelmex-bd/manejadorBD.php?action=Update_precio17266271" method="post">
-            <tr>
-               <?php
-                     $m_1=$row['medida'];
-                     $s_ano=$row['s_anodizar'];
-                     $natural=$row['c_natural'];
-                     $ano_n=$row['ano_negro'];
-                     $electro=$row['electro'];
-                     $blanco=$row['blanco'];
-                     $lac_h=$row['lac_hueso'];
-                     $madera=$row['madera'];
-                     ?>
-                <td><?php echo $row['id']; ?><input type="hidden" value="<?php echo $row['id']; ?>" name="value_id"></td>
-                <td><?php echo $row['nombre']; ?></td>
-                <td><input value="<?php echo $m_1;?>" name="medida" class="form-control"></td>
-                <td><input value="<?php echo $s_ano;?>" name="sin_anodizar" class="form-control"></td>
-                <td><input value="<?php echo $natural;?>" name="natural_1" class="form-control"></td>
-                <td><input value="<?php echo $ano_n;?>" name="anodizado_n" class="form-control"></td>
-                <td><input value="<?php echo $electro;?>" name="electro" class="form-control"></td>
-                <td><input value="<?php echo $blanco;?>" name="blanco" class="form-control"></td>
-                <td><input value="<?php echo $lac_h;?>" name="lacado" class="form-control"></td>
-                <td><input value="<?php echo $madera;?>" name="madera" class="form-control"></td>
-                </tr>
-                <?php
-                     }
-                ?>
-                <tr>
-                    <td colspan="10"><center><button type="submit" class="btn btn-primary">Modificar</button></center></td>
-                </tr>
+            <div class="contenido_i">
+               <form action="templado_corredizo.php?action=Calcular_112410960012" method="post">
+                <table class="table">
+                    <tr>
+                        <th><input type="number" name="piezas" placeholder="Piezas" class="form-control"></th>
+                        <th><input type="text" name="altura" placeholder="Altura" class="form-control"></th>
+                        <th><input type="text" name="ancho" placeholder="Ancho" class="form-control"></th>
+                        <th><button type="submit" class="btn btn-primary">Calcular</button></th>
+                    </tr>
+                </table>
                 </form>
-            </table>
-        </div>
+                <table class="table">
+                   <?php
+                $action=$_GET['action'];
+                switch($action){
+                    case "Calcular_112410960012":
+                        $alto=$_POST["altura"];
+                        $ancho=$_POST["ancho"];
+                        $piezas=$_POST["piezas"];
+                ?>
+                  <td>
+                   <table class="table" id="tabla_oculta_l2">
+                       <tr id="fila_mostrada" >
+                           <th colspan="3" class="encabezados_tablas"><center><button id="boton_menu_l2" onclick="mostrarDisplay_templado_corredizo('tabla_oculta_l2','boton_menu_l2')" class="btn btn-default"><span class="glyphicon glyphicon-menu-hamburger"></span></button>Cancel Corredizo</center></th>
+                       </tr>
+                       <tr id="primera_fila" style="display:none">
+                           <td>Cristal Templado</td>
+                           <?php
+                            $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='cristal templado 6mm'");
+                            $c=$result->fetch_assoc();
+                            $d=$c['precio'];
+                            $unidad=($alto*$ancho)*$piezas;
+                            $cristal_templado=$d*$unidad;
+                           ?>
+                           <td><div id="bs_2"><?php echo round($cristal_templado,2); ?></div></td>
+                       </tr>
+                       <tr style="display:none">
+                           <td>Canto plano</td>
+                           <?php
+                            $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='canto plano recto 4 a 6mm'");
+                            $c=$result->fetch_assoc();
+                            $d=$c['precio'];
+                            $unidad=(($alto*2)+($ancho*2))*$piezas;
+                            $canto_plano=$d*$unidad;
+                           ?>
+                           <td><div id="bl_2"><?php echo round($canto_plano,2); ?></div></td>
+                       </tr>
+                       <tr style="display:none">
+                           <td>Barrenos</td>
+                           <?php
+                            $result=mysqli_query($con,"SELECT price AS precio FROM materials WHERE nombre='barrenos 4 a 6mm'");
+                            $c=$result->fetch_assoc();
+                            $d=$c['precio'];
+                            $unidad=$piezas;
+                            $barrenos=$d*$unidad;
+                           ?>
+                           <td><div id="jun_2"><?php echo round($barrenos,2); ?></div></td>
+                       </tr>
+                       <tr id="filas_ocultas">
+                           <td>Subtotal</td>
+                           <?php
+                            $suma_total_l3=$cristal_templado+$canto_plano+$barrenos;
+                           ?>
+                           <td><div id="suma_total_3"><?php echo round($suma_total_l3,2);?></div></td>
+                       </tr>
+                                <tr><td>IVA</td>
+                                    <?php
+                                        $iva=$suma_total_l3*.16;
+                                    ?>
+                                    <td><div id="claro_l2"><?php echo round($iva,2); ?></div></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">Total</td>
+                                    <?php
+                                        $total=$suma_total_l3+$iva;
+                                    ?>
+
+                                    <td><div id="tintex_l2" class="precios"><?php echo round($total,2); ?></div></td>
+                                </tr>
+                   </table>
+               </td>
+            <?php
+                break;
+                    default:
+                        echo "<center><h2>Ingresa las medidas para comenzar a calcular</h2></center>";
+                        break;
+                }
+                ?>
+
+        </table>
+            </div>
         </div>
     </body>
     <script type="text/javascript" src="../behavior/comportamiento_js.js"></script>

@@ -344,6 +344,34 @@ function ocultarDisplay_puerta1_d(id){
     }
      document.getElementById("boton_menu").setAttribute("onclick","mostrarDisplay_puerta1_d('"+id+"');");
 }
+/*----------------------- Tablas dinamicas corredizo templado -----------------------------------*/
+function mostrarDisplay_templado_corredizo(id,boton) {
+     for(i=1;i<4;i++){
+        fila = document.getElementById(id).rows[i].style.display='';
+    }
+     document.getElementById(boton).setAttribute("onclick","ocultarDisplay_templado_corredizo('"+id+"','"+boton+"');");
+}
+
+function ocultarDisplay_templado_corredizo(id,boton){
+    for(i=1;i<4;i++){
+        fila = document.getElementById(id).rows[i].style.display='none';
+    }
+     document.getElementById(boton).setAttribute("onclick","mostrarDisplay_templado_corredizo('"+id+"','"+boton+"');");
+}
+/*----------------------- Tablas dinamicas corredizo templado -----------------------------------*/
+function mostrarDisplay_templado_puerta(id,boton) {
+     for(i=1;i<8;i++){
+        fila = document.getElementById(id).rows[i].style.display='';
+    }
+     document.getElementById(boton).setAttribute("onclick","ocultarDisplay_templado_puerta('"+id+"','"+boton+"');");
+}
+
+function ocultarDisplay_templado_puerta(id,boton){
+    for(i=1;i<8;i++){
+        fila = document.getElementById(id).rows[i].style.display='none';
+    }
+     document.getElementById(boton).setAttribute("onclick","mostrarDisplay_templado_puerta('"+id+"','"+boton+"');");
+}
 /*------------------------------------------------------------------------------------------------------------*/
 function calcular(medida,s_a,nat,ano_n,elec,blan,lac,mad,a,s_a_s,nat_s,ano_n_s,elec_s,blan_s,lac_s,mad_s){
     var d = document.getElementById("dolar").value;

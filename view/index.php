@@ -8,6 +8,17 @@
             <div class="container-fluid">
                 <a href="index.php" class="navbar-brand">Cancelmex</a>
                 <ul class="nav navbar-nav" id="navegador">
+                   <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Cristales Templados <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="templado_corredizo.php">Cancel Corredizo</a>
+                            </li>
+                            <li>
+                                <a href="puerta_doble_templado.php">Puerta Doble</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown">Perfiles <span class="caret"></span></a>
                         <ul class="dropdown-menu">
