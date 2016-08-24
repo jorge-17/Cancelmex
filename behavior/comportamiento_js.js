@@ -288,17 +288,17 @@ function ocultarDisplay_puerta3_c(id){
 }
 /*----------------------- Tablas dinamicas puerta 2 pulgadas cuadriculada----------------------------------*/
 function mostrarDisplay_puerta2_c(id) {
-     for(i=1;i<14;i++){
+     for(i=1;i<5;i++){
         fila = document.getElementById(id).rows[i].style.display='';
     }
      document.getElementById("boton_menu").setAttribute("onclick","ocultarDisplay_puerta2_c('"+id+"');");
 }
 
 function ocultarDisplay_puerta2_c(id){
-    for(i=1;i<14;i++){
+    for(i=1;i<5;i++){
         fila = document.getElementById(id).rows[i].style.display='none';
     }
-     document.getElementById("boton_menu").setAttribute("onclick","mostrarDisplay_puerta2_C('"+id+"');");
+     document.getElementById("boton_menu").setAttribute("onclick","mostrarDisplay_puerta2_c('"+id+"');");
 }
 
 /*----------------------- Tablas dinamicas puerta 1 3/4 pulgadas cuadriculada-----------------------------------*/

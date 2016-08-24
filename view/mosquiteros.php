@@ -9,8 +9,8 @@
 <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <a href="index.php" class="navbar-brand">Cancelmex</a>
-                <ul class="nav navbar-nav">
-                  <li class="dropdown">
+                <ul class="nav navbar-nav" id="navegador">
+                   <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown">Cristales Templados <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li>
@@ -21,7 +21,7 @@
                             </li>
                         </ul>
                     </li>
-                   <li class="dropdown">
+                    <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown">Perfiles <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li>
@@ -53,30 +53,26 @@
                             <li>
                                 <a href="ventana_cuatro_hojas.php">Ventana cuatro hojas 2" y 3"</a>
                             </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown">Ventanas con antepecho <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
+                            <li class="divider" role="separator"></li>
                             <li>
-                                <a href="ventana_c_antepecho.php">Ventana con antepecho</a>
+                                <a href="ventana_c_antepecho.php">Ventana sencilla con antepecho</a>
                             </li>
                             <li>
-                                <a href="ventana_c_ante_tres_hojas.php">Ventana tres hojas</a>
+                                <a href="ventana_c_ante_tres_hojas.php">Ventana tres hojas con antepecho</a>
                             </li>
                             <li>
-                                <a href="ventana_c_ante_cuatro_hojas.php">Ventana cuatro hojas</a>
+                                <a href="ventana_c_ante_cuatro_hojas.php">Ventana cuatro hojas con antepecho</a>
                             </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown">Ventanas proyectables s/35 <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
+                            <li role="separator" class="divider"></li>
                             <li>
-                                <a href="vetana_proyectable_sencilla.php">Ventana una hoja</a>
+                                <a href="vetana_proyectable_sencilla.php">Ventana una hoja proyectable</a>
                             </li>
                             <li>
-                                <a href="vetana_proyectable_2.php">Ventana dos hojas</a>
+                                <a href="vetana_proyectable_2.php">Ventana dos hojas proyectable</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="ventana_sencilla_cuadriculada.php">Ventana cuadriculada</a>
                             </li>
                         </ul>
                     </li>
@@ -91,6 +87,17 @@
                             </li>
                             <li>
                                 <a href="puerta_tres_cuartos.php">Puerta de 1 3/4"</a>
+                            </li>
+                             <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="puerta2_cuadriculada.php">Puertas cuadriculadas</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="puerta3_doble.php">Puerta doble 3"</a>
+                            </li>
+                            <li>
+                                <a href="puerta1_doble.php">Puerta doble 1 3/4"</a>
                             </li>
                         </ul>
                     </li>
