@@ -1,23 +1,9 @@
 <html>
     <head>
         <title>Index</title>
-        <link rel="stylesheet" type="text/css" href="../style/bootstrap-3.3.6-dist/css/bootstrap.css">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="../style/cover.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <link rel="stylesheet" href="../style/mdl/material.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <scrip src="../style/mdl/material.min.js"></scrip>
     </head>
     <body>
         <div class="site-wrapper">
@@ -30,14 +16,15 @@
             <div class="inner">
               <h3 class="masthead-brand">Cancelmex</h3>
               <nav>
-                <ul class="nav masthead-nav">
-                  <li class="dropdown">
-                        <a data-toggle="dropdown">Cristales Templados <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li>
+                <ul class="mdl-list">
+                  <li class="mdl-list_item">
+                        <a class="mdl-list__item-primary-content" data-toggle="dropdown">Cristales Templados <button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">more_vert</i></button></a>
+                        <ul  class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+    for="demo-menu-lower-left">
+                            <li class="mdl-menu__item">
                                 <a href="templado_corredizo.php">Cancel Corredizo</a>
                             </li>
-                            <li>
+                            <li class="mdl-menu__item">
                                 <a href="puerta_doble_templado.php">Puerta Doble</a>
                             </li>
                         </ul>
@@ -149,13 +136,7 @@
       </div>
 
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 
     </body>
-    <script type="text/javascript" src="../behavior/jquery.min.js"></script>
-    <script type="text/javascript" src="../style/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
 </html>
