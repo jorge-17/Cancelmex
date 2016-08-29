@@ -28,7 +28,7 @@
 
           <div class="masthead clearfix">
             <div class="inner">
-              <h3 class="masthead-brand">Cancelmex</h3>
+              <h3 class="masthead-brand"><a href="index.php">Cancelmex</a></h3>
               <nav>
                 <ul class="nav masthead-nav">
                   <li class="dropdown">
