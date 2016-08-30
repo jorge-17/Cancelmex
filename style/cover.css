@@ -27,7 +27,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #D8D8D8;
+  background-color: #E6E6E6;
 }
 body {
   color: #6E6E6E;
@@ -123,8 +123,7 @@ body {
  */
 
 .mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
+  color: #BDBDBD; /* IE8 proofing */
 }
 
 
